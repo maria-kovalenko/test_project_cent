@@ -1,0 +1,98 @@
+@font-face {
+  font-family: "Druk-Wide-Medium";
+  font-style: normal;
+  font-weight: normal;
+  src: url(../../fonts/Druk-Wide-Medium.woff),
+    url(../../fonts/Druk-Wide-Medium.woff2);
+}
+
+@font-face {
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: normal;
+  src: url(../../fonts/Montserrat-Medium.woff),
+    url(../../fonts/Montserrat-Medium.woff2);
+}
+
+$mobile-width: 375px;
+$tablet-width: 768px;
+$desktop-width: 1440px;
+
+body {
+  min-width: 375px;
+  max-width: 1920px;
+  margin: 0;
+  padding: 0;
+  font-size: 16px;
+  line-height: 24px;
+  font-family: "Montserrat", sans-serif, serif;
+  color: #fff;
+  background-color: #000;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+ul {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+}
+
+li {
+}
+
+a {
+  text-decoration: none;
+  color: #fff;
+}
+
+.button {
+  display: inline-block;
+  padding: 10px 30px;
+  font: inherit;
+  margin-right: 16px;
+  text-align: center;
+  color: #fff;
+  vertical-align: middle;
+  text-transform: uppercase;
+
+  background-color: #000;
+  border: 0;
+  cursor: pointer;
+}
+
+// .button:hover,
+// .button:focus,
+// .button:active {
+//   background-color: b;
+// }
+
+.visually-hidden:not(:focus):not(:active),
+input[type="checkbox"].visually-hidden,
+input[type="radio"].visually-hidden {
+  position: absolute;
+
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+
+  white-space: nowrap;
+
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+
+.container {
+  width: 92%;
+  margin: 0 auto;
+}
+
+.page-header {
+  margin-bottom: 152px;
+}
