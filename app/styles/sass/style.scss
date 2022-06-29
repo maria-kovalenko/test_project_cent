@@ -191,41 +191,18 @@ input[type="radio"].visually-hidden {
   margin: 0;
 }
 
-// .page-header__contacts {
-//   margin-bottom: 80px;
-// }
-
-// // ------------------ page-main -----------------------------
-
-// .page-header__title-wrapper {
-//   width: 87%;
-//   margin: 0 auto;
-//   margin-bottom: 380px;
-// }
-
-// .page-header__title {
-//   font-size: 42px;
-//   line-height: 51px;
-//   margin: 0;
-// }
-
-// .page-header__contacts {
-//   margin-bottom: 80px;
-// }
-
-// ------------------ contacts -----------------------------
-
-.contacts {
+.page-header__contacts {
+  margin-bottom: 80px;
   display: flex;
   justify-content: space-between;
 }
 
-.contacts__adress {
+.header-contacts__adress {
   max-width: 47%;
   margin: 0;
 }
 
-.contacts__email {
+.header-contacts__email {
   max-width: 47%;
   margin: 0;
   align-self: end;
@@ -443,8 +420,15 @@ input[type="radio"].visually-hidden {
 }
 
 .page-footer__form {
+  margin-bottom: 80px;
   padding-left: 44px;
   padding-right: 44px;
+}
+
+// ------------------ footer-form -----------------------------
+
+.form {
+  position: relative;
 }
 
 .form__input-wrapper {
@@ -473,4 +457,108 @@ input[type="radio"].visually-hidden {
   min-height: 138px;
   padding-left: 8px;
   padding-right: 8px;
+  resize: none;
+}
+
+.form__button-wrapper {
+  position: absolute;
+  bottom: -40px;
+  right: 30px;
+}
+
+.form__button {
+  position: relative;
+}
+
+.form__button:hover {
+  .text-hide {
+    display: none;
+  }
+  &::before {
+    position: absolute;
+    content: "";
+    top: 66%;
+    left: calc(50% - 25px);
+    width: 28px;
+    height: 2px;
+    background-color: #fff;
+    transform: rotate(37deg);
+  }
+
+  &::after {
+    position: absolute;
+    content: "";
+    top: 57%;
+    left: calc(50% - 9px);
+    width: 54px;
+    height: 2px;
+    background-color: #fff;
+    transform: rotate(-49deg);
+  }
+}
+
+.text-hide {
+  position: relative;
+
+  &::before {
+    position: absolute;
+    content: "";
+    bottom: -10px;
+    left: 3px;
+    width: 54px;
+    height: 1px;
+    background-color: #fff;
+  }
+
+  &::after {
+    position: absolute;
+    content: "";
+    bottom: -7px;
+    right: 10px;
+    width: 6px;
+    height: 1px;
+    background-color: #fff;
+
+    transform: rotate(45deg);
+    // box-shadow: 5px 10px 0 0 #fff;
+  }
+}
+
+// ------------------ footer-contacts -----------------------------
+
+.page-footer__contacts {
+  margin: 0 auto;
+  text-align: center;
+  padding-left: 44px;
+  padding-right: 44px;
+  margin-bottom: 64px;
+}
+
+.footer-contacts__tel {
+  margin: 0;
+  margin-bottom: 10px;
+}
+
+.footer-contacts__email {
+  margin: 0;
+  margin-bottom: 6px;
+}
+
+.footer-contacts__adress {
+  margin: 0;
+  margin-bottom: 10px;
+}
+
+// ------------------ footer-copyrite -----------------------------
+
+.copyrite {
+  margin: 0 auto;
+  text-align: center;
+  padding-left: 44px;
+  padding-right: 44px;
+  padding-bottom: 40px;
+}
+
+.copyrite__text {
+  margin: 0;
 }

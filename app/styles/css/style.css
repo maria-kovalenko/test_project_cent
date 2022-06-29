@@ -153,7 +153,8 @@ input[type=radio].visually-hidden {
   line-height: 51px;
   margin: 0
 }
-.contacts {
+.page-header__contacts {
+  margin-bottom: 80px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -161,11 +162,11 @@ input[type=radio].visually-hidden {
   -ms-flex-pack: justify;
   justify-content: space-between
 }
-.contacts__adress {
+.header-contacts__adress {
   max-width: 47%;
   margin: 0
 }
-.contacts__email {
+.header-contacts__email {
   max-width: 47%;
   margin: 0;
   -ms-flex-item-align: end;
@@ -346,8 +347,12 @@ input[type=radio].visually-hidden {
   padding-top: 40px
 }
 .page-footer__form {
+  margin-bottom: 80px;
   padding-left: 44px;
   padding-right: 44px
+}
+.form {
+  position: relative
 }
 .form__input-wrapper {
   margin-bottom: 10px
@@ -400,5 +405,94 @@ input[type=radio].visually-hidden {
 .form__message {
   min-height: 138px;
   padding-left: 8px;
-  padding-right: 8px
+  padding-right: 8px;
+  resize: none
+}
+.form__button-wrapper {
+  position: absolute;
+  bottom: -40px;
+  right: 30px
+}
+.form__button {
+  position: relative
+}
+.form__button:hover .text-hide {
+  display: none
+}
+.form__button:hover::before {
+  position: absolute;
+  content: "";
+  top: 66%;
+  left: calc(50% - 25px);
+  width: 28px;
+  height: 2px;
+  background-color: #fff;
+  -webkit-transform: rotate(37deg);
+  -ms-transform: rotate(37deg);
+  transform: rotate(37deg)
+}
+.form__button:hover::after {
+  position: absolute;
+  content: "";
+  top: 57%;
+  left: calc(50% - 9px);
+  width: 54px;
+  height: 2px;
+  background-color: #fff;
+  -webkit-transform: rotate(-49deg);
+  -ms-transform: rotate(-49deg);
+  transform: rotate(-49deg)
+}
+.text-hide {
+  position: relative
+}
+.text-hide::before {
+  position: absolute;
+  content: "";
+  bottom: -10px;
+  left: 3px;
+  width: 54px;
+  height: 1px;
+  background-color: #fff
+}
+.text-hide::after {
+  position: absolute;
+  content: "";
+  bottom: -7px;
+  right: 10px;
+  width: 6px;
+  height: 1px;
+  background-color: #fff;
+  -webkit-transform: rotate(45deg);
+  -ms-transform: rotate(45deg);
+  transform: rotate(45deg)
+}
+.page-footer__contacts {
+  margin: 0 auto;
+  text-align: center;
+  padding-left: 44px;
+  padding-right: 44px;
+  margin-bottom: 64px
+}
+.footer-contacts__tel {
+  margin: 0;
+  margin-bottom: 10px
+}
+.footer-contacts__email {
+  margin: 0;
+  margin-bottom: 6px
+}
+.footer-contacts__adress {
+  margin: 0;
+  margin-bottom: 10px
+}
+.copyrite {
+  margin: 0 auto;
+  text-align: center;
+  padding-left: 44px;
+  padding-right: 44px;
+  padding-bottom: 40px
+}
+.copyrite__text {
+  margin: 0
 }
