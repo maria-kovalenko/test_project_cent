@@ -45,22 +45,23 @@
           class="page-header__toggle page-header__toggle--closed"
         ></button>
       </div>
+
+      <div class="page-header__title-wrapper">
+        <h1 class="page-header__title">Больше чем тенге</h1>
+      </div>
+
+      <div class="page-header__contacts contacts">
+        <p class="contacts__adress">Казань,<br />Карла Маркса 5</p>
+        <p class="contacts__email">info@cent</p>
+      </div>
     </header>
 
     <!------------------ main ----------------------------->
 
-    <main class="page-main container">
-      <div class="page-main__title-wrapper">
-        <h1 class="page-main__title">Больше чем тенге</h1>
-      </div>
-
-      <div class="page-main__contacts contacts">
-        <p class="contacts__adress">Казань,<br />Карла Маркса 5</p>
-        <p class="contacts__email">info@cent</p>
-      </div>
+    <main class="page-main">
       <!------------------ about-us ----------------------------->
 
-      <section class="about-us">
+      <section class="about-us container">
         <h2 class="about-us__title title">О нас</h2>
         <p class="about-us__text">
           Цент –– это агенство, представляющее полный комплекс услуг в области
@@ -74,7 +75,7 @@
       </section>
       <!------------------ advantages ----------------------------->
 
-      <section class="advantages" style="display: none">
+      <section class="advantages container" style="display: none">
         <div class="advantages__media">
           <h2 class="advantages__title">Сми</h2>
           <p class="advantages__numeral">> 2 млн</p>
@@ -120,37 +121,118 @@
 
       <!------------------ cases ----------------------------->
 
-      <section class="cases">
-        <h2 class="cases__title">Кейсы</h2>
-        <div class="cases__wrapper">
-          <img
-            class="cases__image"
-            src="./img/image1case.png"
-            width="344"
-            height="236"
-            alt="Итоги года"
-          />
+      <section class="cases container">
+        <h2 class="cases__title title">Кейсы</h2>
+
+        <div class="cases__card">
+          <a href="#" class="cases__link">
+            <img
+              class="cases__image"
+              src="./img/image1case.png"
+              width="344"
+              height="236"
+              alt="Итоги года"
+          /></a>
           <p class="cases__subtitle">Итоги года 2021</p>
           <p class="cases__text">Ежегодная премия</p>
         </div>
 
-        <div class="cases__wrapper">
-          <img
-            class="cases__image"
-            src="./img/image2case.png"
-            width="344"
-            height="236"
-            alt="Итоги года"
-          />
+        <div class="cases__card">
+          <a href="#" class="cases__link">
+            <img
+              class="cases__image"
+              src="./img/image2case.png"
+              width="344"
+              height="236"
+              alt="Итоги года"
+          /></a>
           <p class="cases__subtitle">Enter x Водоканал</p>
           <p class="cases__text">Рекламная коммуникация</p>
+        </div>
+
+        <div class="cases__card">
+          <a href="#" class="cases__link">
+            <img
+              class="cases__image"
+              src="./img/image3case.png"
+              width="344"
+              height="236"
+              alt="Итоги года"
+          /></a>
+          <p class="cases__subtitle">Итоги года 2021</p>
+          <p class="cases__text">Ежегодная премия</p>
+        </div>
+
+        <div class="cases__card">
+          <a href="#" class="cases__link">
+            <img
+              class="cases__image"
+              src="./img/image4case.png"
+              width="344"
+              height="236"
+              alt="Итоги года"
+          /></a>
+          <p class="cases__subtitle">Enter x Водоканал</p>
+          <p class="cases__text">Рекламная коммуникация</p>
+        </div>
+
+        <div class="cases__card">
+          <a href="#" class="cases__link">
+            <img
+              class="cases__image"
+              src="./img/image5case.png"
+              width="344"
+              height="236"
+              alt="Итоги года"
+          /></a>
+          <p class="cases__subtitle">Фестиваль «Профсоюзная»</p>
+          <p class="cases__text">Уличный фестиваль</p>
+        </div>
+
+        <div class="cases__card">
+          <a href="#" class="cases__link">
+            <img
+              class="cases__image"
+              src="./img/image6case.png"
+              width="344"
+              height="236"
+              alt="Итоги года"
+          /></a>
+          <p class="cases__subtitle">Мой прекрасный Татарстан</p>
+          <p class="cases__text">Фотомарафон</p>
+        </div>
+
+        <div class="cases__card">
+          <a href="#" class="cases__link">
+            <img
+              class="cases__image"
+              src="./img/image7case.png"
+              width="344"
+              height="236"
+              alt="Итоги года"
+          /></a>
+          <p class="cases__subtitle">Фестиваль «Профсоюзная»</p>
+          <p class="cases__text">Уличный фестиваль</p>
+        </div>
+
+        <div class="cases__card">
+          <a href="#" class="cases__link">
+            <img
+              class="cases__image"
+              src="./img/image8case.png"
+              width="344"
+              height="236"
+              alt="Итоги года"
+          /></a>
+          <p class="cases__subtitle">Мой прекрасный Татарстан</p>
+          <p class="cases__text">Фотомарафон</p>
         </div>
       </section>
 
       <!------------------ assets ----------------------------->
 
       <section class="assets">
-        <h2 class="assets__title">Наши активы</h2>
+        <h2 class="assets__title title">Наши активы</h2>
         <div class="assets__wrapper">
           <div class="assets__card">
             <img
@@ -238,7 +320,7 @@
 
       <section class="clients">
         <div class="clients__wrapper">
-          <h2 class="clients__title">Наши клиенты</h2>
+          <h2 class="clients__title title">Наши клиенты</h2>
           <img src="./img/clients-name.png" />
         </div>
       </section>
@@ -247,7 +329,7 @@
     <!------------------ footer ----------------------------->
 
     <footer class="page-footer container">
-      <h2 class="page-footer__title">Контакты</h2>
+      <h2 class="page-footer__title title">Контакты</h2>
       <div class="page-footer__wrapper">
         <form class="page-footer__form form" action="#" method="post">
           <div class="form__input-wrapper">
