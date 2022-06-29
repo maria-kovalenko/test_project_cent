@@ -24,7 +24,7 @@ body {
   margin: 0;
   padding: 0;
   font-size: 16px;
-  line-height: 24px;
+  line-height: 20px;
   font-family: "Montserrat", sans-serif, serif;
   color: #fff;
   background-color: #000;
@@ -41,12 +41,13 @@ ul {
   list-style: none;
 }
 
-li {
-}
-
 a {
   text-decoration: none;
   color: #fff;
+}
+
+p {
+  word-wrap: break-word;
 }
 
 .button {
@@ -93,6 +94,147 @@ input[type="radio"].visually-hidden {
   margin: 0 auto;
 }
 
+// ---------------------------------------- page-header --------------------------------
+
 .page-header {
   margin-bottom: 152px;
+}
+
+.main-nav {
+  display: none;
+}
+
+.page-header__wrapper {
+  padding-top: 40px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logo__image {
+  vertical-align: middle;
+}
+
+.page-header__toggle {
+  position: relative;
+  margin: 0;
+  width: 28px;
+  height: 12px;
+
+  cursor: pointer;
+  border: none;
+  background-color: #000;
+}
+
+.page-header__toggle--closed::before {
+  content: "";
+
+  position: absolute;
+  top: 0;
+  left: 0;
+
+  width: 28px;
+  height: 2px;
+
+  background-color: #fff;
+  box-shadow: 0 6px 0 0 #fff, 0 12px 0 0 #fff;
+}
+
+.page-header__toggle--opened {
+  &::before {
+    content: "";
+
+    position: absolute;
+    top: 5px;
+    left: 0;
+
+    width: 28px;
+    height: 2px;
+    transform: rotate(45deg);
+    background-color: #fff;
+  }
+
+  &::after {
+    content: "";
+
+    position: absolute;
+    top: 5px;
+    left: 0;
+
+    width: 28px;
+    height: 2px;
+    transform: rotate(-45deg);
+    background-color: #fff;
+  }
+}
+
+// ---------------------------------------- page-main --------------------------------
+
+.page-main__title-wrapper {
+  width: 83%;
+  margin: 0 auto;
+  margin-bottom: 380px;
+}
+
+.page-main__title {
+  font-size: 50px;
+  line-height: 45px;
+  margin: 0;
+}
+
+.page-main__contacts {
+  margin-bottom: 80px;
+}
+
+.contacts {
+  display: flex;
+  justify-content: space-between;
+}
+
+.contacts__adress {
+  max-width: 47%;
+  margin: 0;
+}
+
+.contacts__email {
+  max-width: 47%;
+  margin: 0;
+  align-self: end;
+}
+
+.about-us {
+  margin-bottom: 80px;
+}
+
+.title {
+  margin: 0;
+  font-size: 24px;
+}
+
+.about-us__title {
+  margin-bottom: 20px;
+}
+
+.about-us__text {
+  width: 95%;
+  margin: 0;
+  margin-bottom: 10px;
+}
+
+.about-us__wrapper {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 30px;
+}
+
+.about-us__communicate {
+  max-width: 47%;
+  font-weight: bold;
+  margin: 0;
+}
+
+.about-us__more-about-us {
+  max-width: 47%;
+  font-weight: bold;
+  margin: 0;
 }

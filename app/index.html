@@ -25,7 +25,7 @@
       </nav>
 
       <div class="page-header__wrapper">
-        <div class="page-header__logo">
+        <div class="page-header__logo logo">
           <a href="index.html">
             <svg style="display: none">
               <symbol id="logo" viewBox="0 0 65 17">
@@ -35,22 +35,24 @@
                 />
               </symbol>
             </svg>
-            <svg width="65" height="17">
+            <svg width="65" height="17" class="logo__image">
               <use xlink:href="#logo"></use>
             </svg>
           </a>
         </div>
 
-        <div class="page-header__button-menu">
-          <button class="page-header__toggle">м</button>
-        </div>
+        <button
+          class="page-header__toggle page-header__toggle--closed"
+        ></button>
       </div>
     </header>
 
+    <!------------------ main ----------------------------->
+
     <main class="page-main container">
-      <head class="page-main__head">
+      <div class="page-main__title-wrapper">
         <h1 class="page-main__title">Больше чем тенге</h1>
-      </head>
+      </div>
 
       <div class="page-main__contacts contacts">
         <p class="contacts__adress">Казань,<br />Карла Маркса 5</p>
@@ -58,7 +60,7 @@
       </div>
 
       <section class="about-us">
-        <h2 class="about-us__title">О нас</h2>
+        <h2 class="about-us__title title">О нас</h2>
         <p class="about-us__text">
           Цент –– это агенство, представляющее полный комплекс услуг в области
           digital - маркетинга и креатива. Агентсво обладает крупнейшей
@@ -66,7 +68,7 @@
         </p>
         <div class="about-us__wrapper">
           <p class="about-us__communicate">Связаться</p>
-          <p class="about-us__More-about-us">Больше о нас</p>
+          <p class="about-us__more-about-us">Больше о нас</p>
         </div>
       </section>
 
