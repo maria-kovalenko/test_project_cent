@@ -60,16 +60,18 @@ p {
 
 .button {
   display: inline-block;
-  padding: 10px 30px;
-  font: inherit;
-  margin-right: 16px;
+  width: 126px;
+  height: 126px;
+  padding: 0;
   text-align: center;
-  color: #fff;
-  vertical-align: middle;
-  text-transform: uppercase;
+  font-size: 12px;
+  line-height: 15px;
+  font-family: "Montserrat", sans-serif, serif;
 
-  background-color: #000;
-  border: 0;
+  color: #fff;
+  background-color: transparent;
+  border: 1px solid #fff;
+  border-radius: 50%;
   cursor: pointer;
 }
 
@@ -378,13 +380,97 @@ input[type="radio"].visually-hidden {
 
 .assets__card {
   position: relative;
+  display: inline-block;
   width: 165px;
+  margin-right: 15px;
+  margin-bottom: 15px;
+
+  &:last-child {
+    margin-right: 0;
+    margin-bottom: 0;
+  }
+}
+
+.assets__card::before {
+  position: absolute;
+  content: "";
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(15, 15, 16, 0.75);
+}
+
+.assets__image {
+  display: block;
 }
 
 .assets__text {
   position: absolute;
-  top: 50%;
-  left: 50%;
-
+  top: calc(50% - 12px);
+  left: calc(50% - 28px);
+  margin: 0;
   font-size: 20px;
+}
+
+// ------------------ clients -----------------------------
+
+.clients {
+  margin-bottom: 40px;
+}
+
+.clients__title {
+  margin-top: 40px;
+  margin-left: 15px;
+  margin-right: 15px;
+}
+
+.clients__wrapper {
+  height: 236px;
+  background-image: url(../../../img/clients-name.png);
+  background-position: 0 0;
+  background-repeat: repeat;
+}
+
+// ------------------ footer -----------------------------
+
+.page-footer {
+  background-color: #001cad;
+}
+
+.page-footer__wrapper {
+  padding-top: 40px;
+}
+
+.page-footer__form {
+  padding-left: 44px;
+  padding-right: 44px;
+}
+
+.form__input-wrapper {
+  margin-bottom: 10px;
+}
+
+.form__input-wrapper input,
+.form__message {
+  width: 100%;
+  box-sizing: border-box;
+  padding: 16px;
+  color: #fff;
+  background-color: #0024dc;
+  border: none;
+}
+
+.input-text::placeholder,
+.form__message::placeholder {
+  font-size: 12px;
+  line-height: 15px;
+  font-family: "Montserrat", sans-serif, serif;
+  color: #fff;
+}
+
+.form__message {
+  min-height: 138px;
+  padding-left: 8px;
+  padding-right: 8px;
 }

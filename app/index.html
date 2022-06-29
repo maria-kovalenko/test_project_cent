@@ -319,37 +319,56 @@
       <!------------------ clients ----------------------------->
 
       <section class="clients">
+        <h2 class="clients__title title">Наши клиенты</h2>
         <div class="clients__wrapper">
-          <h2 class="clients__title title">Наши клиенты</h2>
-          <img src="./img/clients-name.png" />
+          <!-- <img src="./img/clients-name.png" /> -->
         </div>
       </section>
     </main>
 
     <!------------------ footer ----------------------------->
 
-    <footer class="page-footer container">
-      <h2 class="page-footer__title title">Контакты</h2>
-      <div class="page-footer__wrapper">
+    <footer class="page-footer">
+      <div class="page-footer__wrapper container">
+        <h2 class="page-footer__title title">Контакты</h2>
         <form class="page-footer__form form" action="#" method="post">
           <div class="form__input-wrapper">
             <label for="name"></label>
-            <input id="name" type="text" name="name" placeholder="Ваше имя" />
+            <input
+              class="input-text"
+              id="name"
+              type="text"
+              name="name"
+              placeholder="Ваше имя"
+            />
           </div>
 
           <div class="form__input-wrapper">
             <label for="phone"></label>
-            <input id="phone" type="tel" name="phone" placeholder="Телефон" />
+            <input
+              class="input-text"
+              id="phone"
+              type="tel"
+              name="phone"
+              placeholder="Телефон"
+            />
           </div>
 
           <div class="form__input-wrapper">
             <label for="email"></label>
-            <input id="email" type="email" name="email" placeholder="Email" />
+            <input
+              class="input-text"
+              id="email"
+              type="email"
+              name="email"
+              placeholder="Email"
+            />
           </div>
 
           <div class="form__input-wrapper">
             <label for="question"></label>
             <input
+              class="input-text"
               id="question"
               type="text"
               name="question"
@@ -371,10 +390,10 @@
           <p class="contacts__email">info@cent</p>
           <p class="contacts__adress">Казань, Карла Маркса 9</p>
         </div>
-      </div>
 
-      <div class="page-footer__copyrite copyrite">
-        <p class="copyrite__text">Агенство Cent, 2017</p>
+        <div class="page-footer__copyrite copyrite">
+          <p class="copyrite__text">Агенство Cent, 2017</p>
+        </div>
       </div>
     </footer>
 
