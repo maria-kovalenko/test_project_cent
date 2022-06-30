@@ -182,7 +182,6 @@ input[type="radio"].visually-hidden {
     align-items: center;
 
     background-color: #000;
-    // margin-bottom: 223px;
   }
 }
 
@@ -312,11 +311,35 @@ input[type="radio"].visually-hidden {
   margin-bottom: 80px;
 }
 
+@media (min-width: $desktop-width) {
+  .about-us {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 200px;
+  }
+
+  .about-us__column-left {
+    width: 600px;
+  }
+
+  .about-us__column-right {
+    width: 500px;
+  }
+}
+
 .title {
   margin: 0;
   margin-bottom: 20px;
   font-size: 24px;
   line-height: 29px;
+}
+
+@media (min-width: $desktop-width) {
+  .title {
+    margin-bottom: 60px;
+    font-size: 30px;
+    line-height: 36px;
+  }
 }
 
 .about-us__title {
@@ -329,10 +352,25 @@ input[type="radio"].visually-hidden {
   margin-bottom: 10px;
 }
 
+@media (min-width: $desktop-width) {
+  .about-us__text {
+    font-size: 20px;
+    line-height: 24px;
+  }
+}
+
 .about-us__wrapper {
   display: flex;
   justify-content: space-between;
   margin-top: 30px;
+}
+
+@media (min-width: $desktop-width) {
+  .about-us__wrapper {
+    padding-left: 15px;
+    margin-top: 74px;
+    justify-content: flex-start;
+  }
 }
 
 .about-us__communicate {
@@ -340,6 +378,12 @@ input[type="radio"].visually-hidden {
   margin: 0;
   line-height: 19px;
   font-family: "Druk-Wide-Cyr", sans-serif, serif;
+}
+
+@media (min-width: $desktop-width) {
+  .about-us__communicate {
+    margin-right: 57px;
+  }
 }
 
 .about-us__more-about-us {
