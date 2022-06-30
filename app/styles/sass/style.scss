@@ -742,33 +742,35 @@ input[type="radio"].visually-hidden {
 }
 
 @media (min-width: $desktop-width) {
-  .page-footer {
+  .page-footer__container {
     min-height: 462px;
-  }
-}
-
-.page-footer__wrapper {
-  padding-top: 40px;
-}
-
-@media (min-width: $desktop-width) {
-  .page-footer__wrapper {
     padding-top: 76px;
-    padding-bottom: 65px;
+    // padding-bottom: 65px;
     display: grid;
     grid-template-columns: 270px 500px;
     grid-template-areas:
       "title  form"
-      "contacts  form"
-      "copyrite  form";
+      "contacts  form";
 
-    grid-template-rows: auto;
     justify-content: space-between;
   }
 }
 
+.page-footer__wrapper {
+  grid-area: contacts;
+}
+
 .page-footer__title {
-  grid-area: title;
+  padding-top: 40px;
+  margin-left: 15px;
+}
+
+@media (min-width: $desktop-width) {
+  .page-footer__title {
+    padding-top: 0;
+    margin: 0;
+    grid-area: title;
+  }
 }
 
 // ------------------ footer-form -----------------------------
@@ -786,6 +788,16 @@ input[type="radio"].visually-hidden {
 @media (min-width: $desktop-width) {
   .form {
     grid-area: form;
+    margin-bottom: 80px;
+    padding: 0;
+
+    display: grid;
+    grid-template-columns: 242px 242px;
+    grid-template-areas:
+      "one  two"
+      "three  four"
+      "five  five";
+      grid-column-gap: 15px;
   }
 }
 
@@ -811,6 +823,26 @@ input[type="radio"].visually-hidden {
   color: #fff;
 }
 
+.one {
+  grid-area: one;
+}
+
+.two {
+  grid-area: two;
+}
+
+.three {
+  grid-area: three;
+}
+
+.four {
+  grid-area: four;
+}
+
+.five {
+  grid-area: five;
+}
+
 .form__message {
   min-height: 138px;
   padding-left: 8px;
@@ -822,6 +854,14 @@ input[type="radio"].visually-hidden {
   position: absolute;
   bottom: -40px;
   right: 30px;
+}
+
+@media (min-width: $desktop-width) {
+  .form__button-wrapper {
+    position: absolute;
+    bottom: -15px;
+    right: -63px;
+  }
 }
 
 .form__button {
@@ -893,7 +933,9 @@ input[type="radio"].visually-hidden {
 
 @media (min-width: $desktop-width) {
   .page-footer__contacts {
-    grid-area: contacts;
+    text-align: left;
+    padding: 0;
+    margin-bottom: 60px;
   }
 }
 
@@ -925,6 +967,8 @@ input[type="radio"].visually-hidden {
 @media (min-width: $desktop-width) {
   .page-footer__copyrite {
     grid-area: copyrite;
+    text-align: left;
+    padding: 0;
   }
 }
 
