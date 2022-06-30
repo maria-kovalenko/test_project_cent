@@ -180,7 +180,7 @@ input[type="radio"].visually-hidden {
     min-height: 130px;
     margin-top: 0;
     align-items: center;
-
+    z-index: 1;
     background-color: #000;
   }
 }
@@ -396,10 +396,18 @@ input[type="radio"].visually-hidden {
 // ------------------ advantages -----------------------------
 
 .advantages {
-  display: grid;
+  display: none;
   grid-template-columns: 47% 47%;
   grid-column-gap: 16px;
   text-transform: uppercase;
+}
+
+@media (min-width: $desktop-width) {
+  .advantages {
+    grid-template-columns: 270px 370px 470px;
+    grid-row-gap: 160px;
+    justify-content: space-between;
+  }
 }
 
 .advantages__media {
@@ -425,11 +433,34 @@ input[type="radio"].visually-hidden {
   }
 }
 
+@media (min-width: $desktop-width) {
+  .advantages__media {
+    &:nth-child(5) {
+      grid-column: 2/3;
+      text-align: left;
+    }
+
+    &:nth-child(6) {
+      grid-column: 3/4;
+      text-align: left;
+    }
+  }
+}
+
 .advantages__title {
   margin: 0;
   margin-bottom: 30px;
+  font-size: 24px;
   line-height: 29px;
   color: #bfbfbf;
+}
+
+@media (min-width: $desktop-width) {
+  .advantages__title {
+    margin-bottom: 60px;
+    font-size: 38px;
+    line-height: 46px;
+  }
 }
 
 .advantages__numeral {
@@ -441,12 +472,28 @@ input[type="radio"].visually-hidden {
   margin-bottom: 4px;
 }
 
+@media (min-width: $desktop-width) {
+  .advantages__numeral {
+    font-size: 38px;
+    line-height: 46px;
+
+    margin-bottom: 8px;
+  }
+}
+
 .advantages__description {
   margin: 0;
 
   font-size: 10px;
   line-height: 12px;
   font-family: "Druk-Wide-Cyr", sans-serif, serif;
+}
+
+@media (min-width: $desktop-width) {
+  .advantages__description {
+    font-size: 12px;
+    line-height: 15px;
+  }
 }
 
 .plr-95 {
@@ -457,14 +504,62 @@ input[type="radio"].visually-hidden {
   padding: 0 50px;
 }
 
+@media (min-width: $desktop-width) {
+  .plr-95 {
+    padding: 0;
+  }
+
+  .plr-50 {
+    padding: 0;
+  }
+}
+
 // ------------------ cases -----------------------------
 
 .cases {
+  position: relative;
+
   margin-bottom: 80px;
+}
+
+@media (min-width: $desktop-width) {
+  .cases__button-wrapper {
+    position: absolute;
+    bottom: 40px;
+    left: 415px;
+  }
+
+  .cases__card-wrapper {
+    display: flex;
+
+    justify-content: space-between;
+  }
 }
 
 .cases__card {
   margin-bottom: 30px;
+}
+
+@media (min-width: $desktop-width) {
+  .cases__card {
+    width: 570px;
+  }
+
+  .cases__column-left {
+    width: 540px;
+  }
+
+  .cases__column-right {
+    width: 570px;
+  }
+
+  .cases__image-little {
+    width: 540px;
+  }
+
+  .cases__image-big {
+    width: 570px;
+  }
 }
 
 .cases__title {
@@ -483,6 +578,39 @@ input[type="radio"].visually-hidden {
   font-size: 12px;
   line-height: 15px;
   margin: 0;
+}
+
+.cases__text-btn {
+  position: relative;
+  display: inline-block;
+  padding: 0 18px 0 47px;
+  text-align: left;
+}
+
+.cases__text-btn::before {
+  position: absolute;
+  content: "";
+  top: -10px;
+  left: 36px;
+  width: 1px;
+  height: 54px;
+  background-color: #fff;
+}
+
+.arrow {
+  position: absolute;
+  border: solid white;
+  border-width: 0 1px 1px 0;
+
+  display: inline-block;
+  padding: 3px;
+  transform: rotate(-45deg);
+}
+
+.cases-arrow-position {
+  bottom: 35px;
+  left: 34px;
+  transform: rotate(45deg);
 }
 
 // ------------------ assets -----------------------------
@@ -613,7 +741,11 @@ input[type="radio"].visually-hidden {
 }
 
 .form__button:hover {
-  .text-hide {
+  .modify-text-btn {
+    display: none;
+  }
+
+  .arrow {
     display: none;
   }
   &::before {
@@ -621,7 +753,7 @@ input[type="radio"].visually-hidden {
     content: "";
     top: 66%;
     left: calc(50% - 25px);
-    width: 28px;
+    width: 29px;
     height: 2px;
     background-color: #fff;
     transform: rotate(37deg);
@@ -639,30 +771,26 @@ input[type="radio"].visually-hidden {
   }
 }
 
-.text-hide {
+.modify-text-btn {
   position: relative;
+  display: inline-block;
 
-  &::before {
-    position: absolute;
-    content: "";
-    bottom: -10px;
-    left: 3px;
-    width: 54px;
-    height: 1px;
-    background-color: #fff;
-  }
+  word-wrap: break-word;
+}
 
-  &::after {
-    position: absolute;
-    content: "";
-    bottom: -7px;
-    right: 10px;
-    width: 6px;
-    height: 1px;
-    background-color: #fff;
+.modify-text-btn::before {
+  position: absolute;
+  content: "";
+  bottom: -10px;
+  left: 3px;
+  width: 54px;
+  height: 1px;
+  background-color: #fff;
+}
 
-    transform: rotate(45deg);
-  }
+.form-arrow-position {
+  bottom: 41.6px;
+  right: 39px;
 }
 
 // ------------------ footer-contacts -----------------------------
