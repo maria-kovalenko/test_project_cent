@@ -723,10 +723,9 @@ input[type="radio"].visually-hidden {
 }
 
 .clients__wrapper {
-  height: 236px;
-  background-image: url(../../../img/clients-name.png);
-  background-position: 0 0;
-  background-repeat: repeat;
+  height: 316px;
+  background-image: url(../../../img/clients-name-whole.png);
+  background-position-x: -900px;
 }
 
 @media (min-width: $desktop-width) {
