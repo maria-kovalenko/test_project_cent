@@ -620,9 +620,29 @@ input[type="radio"].visually-hidden {
   margin-right: 15px;
 }
 
+@media (min-width: $desktop-width) {
+  .assets {
+    background-color: #001cad;
+  }
+  .assets__title {
+    margin-left: 34px;
+    padding-top: 34px;
+    margin-bottom: 56px;
+  }
+}
+
 .assets__wrapper {
   padding: 40px 15px;
   background-color: #001cad;
+}
+
+@media (min-width: $desktop-width) {
+  .assets__wrapper {
+    display: flex;
+
+    padding: 0;
+    padding-bottom: 152px;
+  }
 }
 
 .assets__card {
@@ -648,8 +668,22 @@ input[type="radio"].visually-hidden {
   background-color: rgba(15, 15, 16, 0.75);
 }
 
+@media (min-width: $desktop-width) {
+  .assets__card {
+    width: 240px;
+    height: 494px;
+  }
+}
+
 .assets__image {
   display: block;
+}
+
+@media (min-width: $desktop-width) {
+  .assets__image {
+    width: 240px;
+    height: 494px;
+  }
 }
 
 .assets__text {
@@ -658,6 +692,16 @@ input[type="radio"].visually-hidden {
   left: calc(50% - 28px);
   margin: 0;
   font-size: 20px;
+}
+
+@media (min-width: $desktop-width) {
+  .assets__text {
+    top: calc(50% - 15px);
+    left: calc(50% - 35px);
+
+    line-height: 30px;
+    font-size: 25px;
+  }
 }
 
 // ------------------ clients -----------------------------
