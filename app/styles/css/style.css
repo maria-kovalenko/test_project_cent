@@ -650,7 +650,6 @@ input[type=radio].visually-hidden {
 }
 @media (min-width:1440px) {
   .page-footer__container {
-    min-height: 462px;
     padding-top: 76px;
     display: -ms-grid;
     display: grid;
@@ -665,6 +664,13 @@ input[type=radio].visually-hidden {
 .page-footer__wrapper {
   grid-area: contacts
 }
+@media (min-width:1440px) {
+  .page-footer__wrapper {
+    margin-top: -50px;
+    font-size: 20px;
+    line-height: 24px
+  }
+}
 .page-footer__title {
   padding-top: 40px;
   margin-left: 15px
@@ -673,7 +679,8 @@ input[type=radio].visually-hidden {
   .page-footer__title {
     padding-top: 0;
     margin: 0;
-    grid-area: title
+    grid-area: title;
+    align-self: baseline
   }
 }
 .page-footer__form {
@@ -693,8 +700,9 @@ input[type=radio].visually-hidden {
     display: grid;
     -ms-grid-columns: 242px 15px 242px;
     grid-template-columns: 242px 242px;
-    grid-template-areas: "one  two" "three  four" "five  five";
-    grid-column-gap: 15px
+    grid-template-areas: "area-name  area-email" "area-phone  area-question" "area-message area-message";
+    grid-column-gap: 15px;
+    align-self: baseline
   }
 }
 @media (min-width:1440px) {
@@ -760,39 +768,39 @@ input[type=radio].visually-hidden {
   font-family: Montserrat,sans-serif,serif;
   color: #fff
 }
-.one {
-  grid-area: one
+.area-name {
+  grid-area: area-name
 }
-.two {
-  grid-area: two
+.area-phone {
+  grid-area: area-phone
 }
-.three {
-  grid-area: three
+.area-email {
+  grid-area: area-email
 }
-.four {
-  grid-area: four
+.area-question {
+  grid-area: area-question
 }
-.five {
-  grid-area: five
+.area-message {
+  grid-area: area-message
 }
 @media (min-width:1440px) {
-  .one {
+  .area-name {
     -ms-grid-row: 1;
     -ms-grid-column: 1
   }
-  .two {
-    -ms-grid-row: 1;
-    -ms-grid-column: 3
-  }
-  .three {
+  .area-phone {
     -ms-grid-row: 2;
     -ms-grid-column: 1
   }
-  .four {
+  .area-email {
+    -ms-grid-row: 1;
+    -ms-grid-column: 3
+  }
+  .area-question {
     -ms-grid-row: 2;
     -ms-grid-column: 3
   }
-  .five {
+  .area-message {
     -ms-grid-row: 3;
     -ms-grid-column: 1;
     -ms-grid-column-span: 3
@@ -804,6 +812,11 @@ input[type=radio].visually-hidden {
   padding-right: 8px;
   resize: none
 }
+@media (min-width:1440px) {
+  .form__message {
+    min-height: 171px
+  }
+}
 .form__button-wrapper {
   position: absolute;
   bottom: -40px;
@@ -812,7 +825,7 @@ input[type=radio].visually-hidden {
 @media (min-width:1440px) {
   .form__button-wrapper {
     position: absolute;
-    bottom: -15px;
+    bottom: -30px;
     right: -63px
   }
 }

@@ -743,21 +743,26 @@ input[type="radio"].visually-hidden {
 
 @media (min-width: $desktop-width) {
   .page-footer__container {
-    min-height: 462px;
     padding-top: 76px;
-    // padding-bottom: 65px;
     display: grid;
     grid-template-columns: 270px 500px;
     grid-template-areas:
       "title  form"
       "contacts  form";
-
     justify-content: space-between;
   }
 }
 
 .page-footer__wrapper {
   grid-area: contacts;
+}
+
+@media (min-width: $desktop-width) {
+  .page-footer__wrapper {
+    margin-top: -50px;
+    font-size: 20px;
+    line-height: 24px;
+  }
 }
 
 .page-footer__title {
@@ -770,6 +775,7 @@ input[type="radio"].visually-hidden {
     padding-top: 0;
     margin: 0;
     grid-area: title;
+    align-self: baseline;
   }
 }
 
@@ -794,10 +800,11 @@ input[type="radio"].visually-hidden {
     display: grid;
     grid-template-columns: 242px 242px;
     grid-template-areas:
-      "one  two"
-      "three  four"
-      "five  five";
-      grid-column-gap: 15px;
+      "area-name  area-email"
+      "area-phone  area-question"
+      "area-message area-message";
+    grid-column-gap: 15px;
+    align-self: baseline;
   }
 }
 
@@ -823,24 +830,24 @@ input[type="radio"].visually-hidden {
   color: #fff;
 }
 
-.one {
-  grid-area: one;
+.area-name {
+  grid-area: area-name;
 }
 
-.two {
-  grid-area: two;
+.area-phone {
+  grid-area: area-phone;
 }
 
-.three {
-  grid-area: three;
+.area-email {
+  grid-area: area-email;
 }
 
-.four {
-  grid-area: four;
+.area-question {
+  grid-area: area-question;
 }
 
-.five {
-  grid-area: five;
+.area-message {
+  grid-area: area-message;
 }
 
 .form__message {
@@ -848,6 +855,12 @@ input[type="radio"].visually-hidden {
   padding-left: 8px;
   padding-right: 8px;
   resize: none;
+}
+
+@media (min-width: $desktop-width) {
+  .form__message {
+    min-height: 171px;
+  }
 }
 
 .form__button-wrapper {
@@ -859,7 +872,7 @@ input[type="radio"].visually-hidden {
 @media (min-width: $desktop-width) {
   .form__button-wrapper {
     position: absolute;
-    bottom: -15px;
+    bottom: -30px;
     right: -63px;
   }
 }
