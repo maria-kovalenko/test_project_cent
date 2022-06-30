@@ -741,6 +741,12 @@ input[type="radio"].visually-hidden {
   background-color: #001cad;
 }
 
+@media (min-width: $desktop-width) {
+  .page-footer {
+    min-height: 462px;
+  }
+}
+
 .page-footer__wrapper {
   padding-top: 40px;
 }
@@ -748,8 +754,24 @@ input[type="radio"].visually-hidden {
 @media (min-width: $desktop-width) {
   .page-footer__wrapper {
     padding-top: 76px;
+    padding-bottom: 65px;
+    display: grid;
+    grid-template-columns: 270px 500px;
+    grid-template-areas:
+      "title  form"
+      "contacts  form"
+      "copyrite  form";
+
+    grid-template-rows: auto;
+    justify-content: space-between;
   }
 }
+
+.page-footer__title {
+  grid-area: title;
+}
+
+// ------------------ footer-form -----------------------------
 
 .page-footer__form {
   margin-bottom: 80px;
@@ -757,10 +779,14 @@ input[type="radio"].visually-hidden {
   padding-right: 44px;
 }
 
-// ------------------ footer-form -----------------------------
-
 .form {
   position: relative;
+}
+
+@media (min-width: $desktop-width) {
+  .form {
+    grid-area: form;
+  }
 }
 
 .form__input-wrapper {
@@ -865,6 +891,12 @@ input[type="radio"].visually-hidden {
   margin-bottom: 64px;
 }
 
+@media (min-width: $desktop-width) {
+  .page-footer__contacts {
+    grid-area: contacts;
+  }
+}
+
 .footer-contacts__tel {
   margin: 0;
   margin-bottom: 10px;
@@ -888,6 +920,12 @@ input[type="radio"].visually-hidden {
   padding-left: 44px;
   padding-right: 44px;
   padding-bottom: 40px;
+}
+
+@media (min-width: $desktop-width) {
+  .page-footer__copyrite {
+    grid-area: copyrite;
+  }
 }
 
 .copyrite__text {
