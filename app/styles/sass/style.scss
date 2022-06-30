@@ -716,11 +716,23 @@ input[type="radio"].visually-hidden {
   margin-right: 15px;
 }
 
+@media (min-width: $desktop-width) {
+  .clients__title {
+    margin: 134px auto 50px 135px;
+  }
+}
+
 .clients__wrapper {
   height: 236px;
   background-image: url(../../../img/clients-name.png);
   background-position: 0 0;
   background-repeat: repeat;
+}
+
+@media (min-width: $desktop-width) {
+  .clients__wrapper {
+    margin-bottom: 134px;
+  }
 }
 
 // ------------------ footer -----------------------------
@@ -731,6 +743,12 @@ input[type="radio"].visually-hidden {
 
 .page-footer__wrapper {
   padding-top: 40px;
+}
+
+@media (min-width: $desktop-width) {
+  .page-footer__wrapper {
+    padding-top: 76px;
+  }
 }
 
 .page-footer__form {
