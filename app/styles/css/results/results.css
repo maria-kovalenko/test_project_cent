@@ -1,7 +1,8 @@
 .back-wrapper {
   position: relative;
   display: inline-block;
-  margin-top: 22px
+  margin-top: 22px;
+  margin-bottom: 40px
 }
 .back-text-btn {
   position: relative;
@@ -25,4 +26,29 @@
   -webkit-transform: rotate(135deg);
   -ms-transform: rotate(135deg);
   transform: rotate(135deg)
+}
+.card-description {
+  margin-bottom: 60px
+}
+.card-description__title {
+  margin-bottom: 10px
+}
+.card-description__subtitle {
+  margin: 0;
+  margin-bottom: 20px
+}
+.card-description__text-top {
+  margin-top: 0;
+  margin-bottom: 20px;
+  text-align: justify
+}
+.card-description__column-right {
+  margin-bottom: 20px
+}
+.card-description__text-bottom {
+  margin: 0;
+  margin-bottom: 20px;
+  font-size: 20px;
+  line-height: 24px;
+  text-align: justify
 }
