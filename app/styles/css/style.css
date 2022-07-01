@@ -279,7 +279,7 @@ input[type=radio].visually-hidden {
     -webkit-box-pack: justify;
     -ms-flex-pack: justify;
     justify-content: space-between;
-    margin-bottom: 200px
+    margin-bottom: 100px
   }
   .about-us__column-left {
     width: 600px
@@ -311,6 +311,7 @@ input[type=radio].visually-hidden {
 }
 @media (min-width:1440px) {
   .about-us__text {
+    width: 100%;
     font-size: 20px;
     line-height: 24px
   }
@@ -345,10 +346,15 @@ input[type=radio].visually-hidden {
   }
 }
 .about-us__more-about-us {
-  max-width: 47%;
   margin: 0;
   line-height: 19px;
-  font-family: Druk-Wide-Cyr,sans-serif,serif
+  font-family: Druk-Wide-Cyr,sans-serif,serif;
+  text-align: right
+}
+@media (min-width:1440px) {
+  .about-us__more-about-us {
+    text-align: left
+  }
 }
 .advantages {
   display: none;

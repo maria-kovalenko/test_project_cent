@@ -315,7 +315,7 @@ input[type="radio"].visually-hidden {
   .about-us {
     display: flex;
     justify-content: space-between;
-    margin-bottom: 200px;
+    margin-bottom: 100px;
   }
 
   .about-us__column-left {
@@ -354,6 +354,7 @@ input[type="radio"].visually-hidden {
 
 @media (min-width: $desktop-width) {
   .about-us__text {
+    width: 100%;
     font-size: 20px;
     line-height: 24px;
   }
@@ -387,10 +388,17 @@ input[type="radio"].visually-hidden {
 }
 
 .about-us__more-about-us {
-  max-width: 47%;
+  // max-width: 47%;
   margin: 0;
   line-height: 19px;
   font-family: "Druk-Wide-Cyr", sans-serif, serif;
+  text-align: right;
+}
+
+@media (min-width: $desktop-width) {
+  .about-us__more-about-us {
+    text-align: left;
+  }
 }
 
 // ------------------ advantages -----------------------------
@@ -400,7 +408,21 @@ input[type="radio"].visually-hidden {
   grid-template-columns: 47% 47%;
   grid-column-gap: 16px;
   text-transform: uppercase;
+  // transform: translateY(-500%);
+  // transform: translateX(-400%);
+  // transition: transform 0.2s linear;
+  // overflow: hidden;
+  // margin-top: 50px;
+  // max-height: 0;
 }
+
+// .about-us__more-about-us:hover + .advantages{
+//   width: 100%;
+//   transform: translateY(0);
+//   transform: translateX(-500%);
+//   transition: 0.2s;
+//   max-height: 800px;
+// }
 
 @media (min-width: $desktop-width) {
   .advantages {
