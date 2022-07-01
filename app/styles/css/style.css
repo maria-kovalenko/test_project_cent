@@ -83,11 +83,15 @@ input[type=radio].visually-hidden {
   }
 }
 .page-header {
-  margin-bottom: 80px
+  width: 100%;
+  margin-bottom: 80px;
+  background-color: #000;
+  z-index: 1
 }
 @media (min-width:1440px) {
   .page-header {
-    margin-bottom: 200px
+    position: fixed;
+    margin-bottom: 223px
   }
 }
 .main-nav {
@@ -165,16 +169,6 @@ input[type=radio].visually-hidden {
   align-items: center
 }
 @media (min-width:1440px) {
-  .p-container {
-    position: fixed;
-    width: 100%;
-    margin-top: 0;
-    -webkit-box-align: center;
-    -ms-flex-align: center;
-    align-items: center;
-    z-index: 1;
-    background-color: #000
-  }
   .page-header__wrapper {
     min-height: 130px;
     margin-bottom: 0
@@ -243,30 +237,30 @@ input[type=radio].visually-hidden {
     display: none
   }
 }
-.page-header__title-wrapper {
-  width: 87%;
+.page-main__title-wrapper {
+  width: 83%;
   margin: 0 auto;
   margin-bottom: 380px
 }
 @media (min-width:1440px) {
-  .page-header__title-wrapper {
+  .page-main__title-wrapper {
     width: 70%;
     margin-bottom: 252px;
     padding-top: 353px
   }
 }
-.page-header__title {
+.page-main__title {
   font-size: 42px;
   line-height: 51px;
   margin: 0
 }
 @media (min-width:1440px) {
-  .page-header__title {
+  .page-main__title {
     font-size: 78px;
     line-height: 100px
   }
 }
-.page-header__contacts {
+.page-main__contacts {
   margin-bottom: 80px;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -275,20 +269,25 @@ input[type=radio].visually-hidden {
   -ms-flex-pack: justify;
   justify-content: space-between
 }
-.header-contacts__adress {
+@media (min-width:1440px) {
+  .page-main__contacts {
+    margin-bottom: 200px
+  }
+}
+.main-contacts__adress {
   max-width: 47%;
   margin: 0
 }
 @media (min-width:1440px) {
-  .header-contacts__adress {
+  .main-contacts__adress {
     font-size: 20px;
     line-height: 24px
   }
-  .header-contacts__adress br {
+  .main-contacts__adress br {
     display: none
   }
 }
-.header-contacts__email {
+.main-contacts__email {
   max-width: 47%;
   margin: 0;
   -ms-flex-item-align: end;
@@ -296,7 +295,7 @@ input[type=radio].visually-hidden {
   align-self: end
 }
 @media (min-width:1440px) {
-  .header-contacts__email {
+  .main-contacts__email {
     font-size: 20px;
     line-height: 24px
   }
@@ -312,7 +311,7 @@ input[type=radio].visually-hidden {
     -webkit-box-pack: justify;
     -ms-flex-pack: justify;
     justify-content: space-between;
-    margin-bottom: 100px
+    margin-bottom: 200px
   }
   .about-us__column-left {
     width: 600px
