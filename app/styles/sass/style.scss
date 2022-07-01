@@ -190,14 +190,18 @@ input[type="radio"].visually-hidden {
 }
 
 @media (min-width: $desktop-width) {
-  .page-header__wrapper {
+  .p-container {
     position: fixed;
-    width: 81%;
-    min-height: 130px;
+    width: 100%;
     margin-top: 0;
     align-items: center;
     z-index: 1;
     background-color: #000;
+  }
+
+  .page-header__wrapper {
+    min-height: 130px;
+    margin-bottom: 0;
   }
 }
 
@@ -285,7 +289,7 @@ input[type="radio"].visually-hidden {
 
 @media (min-width: $desktop-width) {
   .page-header__title-wrapper {
-    width: 88%;
+    width: 70%;
     margin-bottom: 252px;
     padding-top: 353px;
   }
@@ -315,10 +319,28 @@ input[type="radio"].visually-hidden {
   margin: 0;
 }
 
+@media (min-width: $desktop-width) {
+  .header-contacts__adress {
+    font-size: 20px;
+    line-height: 24px;
+
+    br {
+      display: none;
+    }
+  }
+}
+
 .header-contacts__email {
   max-width: 47%;
   margin: 0;
   align-self: end;
+}
+
+@media (min-width: $desktop-width) {
+  .header-contacts__email {
+    font-size: 20px;
+    line-height: 24px;
+  }
 }
 
 // ------------------ about-us -----------------------------
