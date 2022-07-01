@@ -1,8 +1,18 @@
+$mobile-width: 375px;
+$tablet-width: 768px;
+$desktop-width: 1440px;
+
 .back-wrapper {
   position: relative;
   display: inline-block;
   margin-top: 22px;
   margin-bottom: 40px;
+}
+
+@media (min-width: $desktop-width) {
+  .back-wrapper {
+    margin-bottom: 60px;
+  }
 }
 
 .back-text-btn {
@@ -33,6 +43,17 @@
   margin-bottom: 60px;
 }
 
+@media (min-width: $desktop-width) {
+  .card-description {
+    margin-bottom: 129px;
+  }
+  .card-description__wrapper {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 70px;
+  }
+}
+
 .card-description__title {
   margin-bottom: 10px;
 }
@@ -42,14 +63,47 @@
   margin-bottom: 20px;
 }
 
+@media (min-width: $desktop-width) {
+  .card-description__subtitle {
+    margin-bottom: 30px;
+  }
+}
+
 .card-description__text-top {
   margin-top: 0;
   margin-bottom: 20px;
   text-align: justify;
 }
 
+@media (min-width: $desktop-width) {
+  .card-description__text-top {
+    margin-top: 0;
+    margin-bottom: 20px;
+    font-size: 20px;
+    line-height: 24px;
+    text-align: left;
+  }
+}
+
 .card-description__column-right {
   margin-bottom: 20px;
+  height: 263px;
+  background-image: url(../../../img/image11case.png);
+  background-position: 0 0;
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+
+@media (min-width: $desktop-width) {
+  .card-description__column-left {
+    width: 514px;
+  }
+
+  .card-description__column-right {
+    width: 600px;
+    height: auto;
+    background-size: cover;
+  }
 }
 
 .card-description__text-bottom {
@@ -58,4 +112,18 @@
   font-size: 20px;
   line-height: 24px;
   text-align: justify;
+}
+
+@media (min-width: $desktop-width) {
+  .card-description__text-bottom {
+    padding-right: 33px;
+    margin-bottom: 20px;
+    text-align: left;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .other-cases__title {
+    display: none;
+  }
 }

@@ -489,9 +489,6 @@ input[type=radio].visually-hidden {
   margin-bottom: 30px
 }
 @media (min-width:1440px) {
-  .cases__card {
-    width: 570px
-  }
   .cases__column-left {
     width: 540px
   }
