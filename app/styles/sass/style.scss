@@ -563,11 +563,11 @@ input[type="radio"].visually-hidden {
     width: 570px;
   }
 
-  .cases__image-little {
+  .card__image-little {
     width: 540px;
   }
 
-  .cases__image-big {
+  .card__image-big {
     width: 570px;
   }
 }
@@ -577,14 +577,14 @@ input[type="radio"].visually-hidden {
   margin-bottom: 20px;
 }
 
-.cases__subtitle {
+.card__title {
   margin-top: 10px;
   margin-bottom: 2px;
   line-height: 19px;
   font-family: "Druk-Wide-Cyr", sans-serif, serif;
 }
 
-.cases__text {
+.card__subtitle {
   font-size: 12px;
   line-height: 15px;
   margin: 0;
