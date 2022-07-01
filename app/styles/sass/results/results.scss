@@ -1,0 +1,29 @@
+.back-wrapper {
+  position: relative;
+  display: inline-block;
+  margin-top: 22px;
+}
+
+.back-text-btn {
+  position: relative;
+  display: inline-block;
+  font-size: 10px;
+  padding-left: 10px;
+}
+
+.back-text-btn::before {
+  position: absolute;
+  content: "";
+  top: 15px;
+  left: 0;
+  width: 36px;
+  height: 1px;
+  background-color: #fff;
+}
+
+.results-arrow-position {
+  position: absolute;
+  top: 38px;
+  left: 13px;
+  transform: rotate(135deg);
+}

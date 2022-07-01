@@ -45,8 +45,8 @@ p {
 }
 .button {
   display: inline-block;
-  width: 126px;
-  height: 126px;
+  width: 66px;
+  height: 66px;
   padding: 0;
   text-align: center;
   font-size: 12px;
@@ -462,8 +462,16 @@ input[type=radio].visually-hidden {
   position: relative;
   margin-bottom: 80px
 }
+.cases__button-wrapper {
+  display: none
+}
+.cases__button {
+  width: 126px;
+  height: 126px
+}
 @media (min-width:1440px) {
   .cases__button-wrapper {
+    display: block;
     position: absolute;
     bottom: 40px;
     left: 415px
@@ -829,7 +837,9 @@ input[type=radio].visually-hidden {
   }
 }
 .form__button {
-  position: relative
+  position: relative;
+  width: 126px;
+  height: 126px
 }
 .form__button:hover .modify-text-btn {
   display: none
