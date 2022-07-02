@@ -639,6 +639,9 @@ input[type=radio].visually-hidden {
   margin-right: 0
 }
 @media (min-width:1440px) {
+  .cases__card {
+    margin-bottom: 40px
+  }
   .cases__column-left {
     display: block;
     width: 540px;
@@ -820,6 +823,9 @@ input[type=radio].visually-hidden {
     display: none
   }
 }
+.assets {
+  overflow: hidden
+}
 .assets__title {
   margin-left: 15px;
   margin-right: 15px
@@ -834,20 +840,29 @@ input[type=radio].visually-hidden {
     margin-bottom: 56px
   }
 }
+.assets__scroll {
+  -webkit-touch-callout: none;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  cursor: -webkit-grab;
+  cursor: grab;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  white-space: nowrap;
+  min-width: -webkit-max-content;
+  min-width: -moz-max-content;
+  min-width: max-content
+}
 .assets__wrapper {
   padding: 40px 15px;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  overflow-x: scroll;
+  overflow: hidden;
   background-color: #001cad
 }
 @media (min-width:1440px) {
   .assets__wrapper {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    overflow-x: scroll;
     padding: 0;
     padding-left: 15px;
     padding-right: 15px;
@@ -905,6 +920,7 @@ input[type=radio].visually-hidden {
   }
 }
 .clients {
+  overflow: hidden;
   margin-bottom: 40px
 }
 .clients__title {
@@ -913,18 +929,31 @@ input[type=radio].visually-hidden {
   margin-right: 15px
 }
 @media (min-width:1440px) {
+  .clients {
+    margin-bottom: 0
+  }
   .clients__title {
     margin: 134px auto 50px 135px
   }
 }
 .clients__wrapper {
-  height: 316px;
-  background-image: url(../../../img/clients-name-whole.png);
-  background-position-x: -900px
+  -webkit-transform: translateX(-1050px);
+  -ms-transform: translateX(-1050px);
+  transform: translateX(-1050px)
+}
+.clients__wrapper img {
+  width: 3000px;
+  max-width: 3000px
 }
 @media (min-width:1440px) {
   .clients__wrapper {
+    -webkit-transform: translateX(-790px);
+    -ms-transform: translateX(-790px);
+    transform: translateX(-790px);
     margin-bottom: 134px
+  }
+  .clients__wrapper img {
+    width: 250%
   }
 }
 .page-footer {
@@ -1208,11 +1237,15 @@ input[type=radio].visually-hidden {
   margin: 0
 }
 .modal {
+  display: block;
   -webkit-animation: example 1s ease-in-out forwards;
   animation: example 1s ease-in-out forwards;
   -webkit-transform: translate(-100%);
   -ms-transform: translate(-100%);
   transform: translate(-100%)
+}
+.modal__map {
+  max-width: 100%
 }
 @-webkit-keyframes example {
   0% {

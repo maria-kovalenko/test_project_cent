@@ -75,12 +75,6 @@ p {
   cursor: pointer;
 }
 
-// .button:hover,
-// .button:focus,
-// .button:active {
-//   background-color: b;
-// }
-
 .visually-hidden:not(:focus):not(:active),
 input[type="checkbox"].visually-hidden,
 input[type="radio"].visually-hidden {
@@ -682,6 +676,9 @@ input[type="radio"].visually-hidden {
 }
 
 @media (min-width: $desktop-width) {
+  .cases__card {
+    margin-bottom: 40px;
+  }
   .cases__column-left {
     display: block;
     width: 540px;
@@ -888,6 +885,10 @@ input[type="radio"].visually-hidden {
 
 // ------------------ assets -----------------------------
 
+.assets {
+  overflow: hidden;
+}
+
 .assets__title {
   margin-left: 15px;
   margin-right: 15px;
@@ -904,33 +905,33 @@ input[type="radio"].visually-hidden {
   }
 }
 
+.assets__scroll {
+  -webkit-touch-callout: none; /* iOS Safari */
+  -webkit-user-select: none; /* Chrome/Safari/Opera */
+  -khtml-user-select: none; /* Konqueror */
+  -moz-user-select: none; /* Firefox */
+  -ms-user-select: none; /* Internet Explorer/Edge */
+  user-select: none; /* Non-prefixed version, currently
+                            not supported by any browser */
+  cursor: grab;
+  width: fit-content;
+  white-space: nowrap;
+  min-width: max-content;
+}
+
 .assets__wrapper {
   padding: 40px 15px;
-  display: flex;
-
-  overflow-x: scroll;
+  overflow: hidden;
   background-color: #001cad;
 }
 
 @media (min-width: $desktop-width) {
   .assets__wrapper {
-    display: flex;
-    overflow-x: scroll;
     padding: 0;
     padding-left: 15px;
     padding-right: 15px;
     padding-bottom: 152px;
   }
-  // .assets__wrapper {
-  //   overflow: auto;
-  //   -ms-overflow-style: none;
-  //   scrollbar-width: none;
-  // }
-
-  // .assets__wrapper::-webkit-scrollbar {
-  //   width: 0;
-  //   height: 0;
-  // }
 }
 
 .assets__card {
@@ -995,6 +996,7 @@ input[type="radio"].visually-hidden {
 // ------------------ clients -----------------------------
 
 .clients {
+  overflow: hidden;
   margin-bottom: 40px;
 }
 
@@ -1005,20 +1007,31 @@ input[type="radio"].visually-hidden {
 }
 
 @media (min-width: $desktop-width) {
+  .clients {
+    margin-bottom: 0;
+  }
   .clients__title {
     margin: 134px auto 50px 135px;
   }
 }
 
 .clients__wrapper {
-  height: 316px;
-  background-image: url(../../../img/clients-name-whole.png);
-  background-position-x: -900px;
+  transform: translateX(-1050px);
+}
+
+.clients__wrapper img {
+  width: 3000px;
+  max-width: 3000px;
 }
 
 @media (min-width: $desktop-width) {
   .clients__wrapper {
+    transform: translateX(-790px);
     margin-bottom: 134px;
+  }
+
+  .clients__wrapper img {
+    width: 250%;
   }
 }
 
@@ -1279,8 +1292,14 @@ input[type="radio"].visually-hidden {
 }
 
 .modal {
+  display: block;
+
   animation: example 1s ease-in-out forwards;
   transform: translate(-100%);
+}
+
+.modal__map {
+  max-width: 100%;
 }
 
 @keyframes example {

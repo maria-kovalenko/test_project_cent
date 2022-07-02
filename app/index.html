@@ -21,10 +21,11 @@
         alt="Карта проезда"
       />
 
-      <button class="modal-close" type="button">
+      <!-- <button class="modal-close" type="button">
         <span class="visually-hidden">Закрыть</span>
-      </button>
+      </button> -->
     </section>
+
     <header class="page-header">
       <div class="page-header__wrapper container">
         <div class="page-header__logo logo">
@@ -271,7 +272,7 @@
 
       <!-- -----------------results--------------------- -->
 
-      <section class="results container ">
+      <section class="results container">
         <div class="back-wrapper">
           <button class="back-button button" type="submit">
             <span class="back-text-btn">Назад</span
@@ -436,93 +437,96 @@
       <section class="assets">
         <h2 class="assets__title title">Наши активы</h2>
         <div class="assets__wrapper">
-          <div class="assets__card">
-            <img
-              class="assets__image"
-              src="./img/card1.png"
-              width="165"
-              height="297"
-            />
-            <p class="assets__text">Enter</p>
-          </div>
+          <div class="assets__scroll" id="assetsScroll">
+            <div class="assets__card">
+              <img
+                class="assets__image"
+                src="./img/card1.png"
+                width="165"
+                height="297"
+              />
+              <p class="assets__text">Enter</p>
+            </div>
 
-          <div class="assets__card">
-            <img
-              class="assets__image"
-              src="./img/card2.png"
-              width="165"
-              height="297"
-            />
-            <p class="assets__text">Enter</p>
-          </div>
+            <div class="assets__card">
+              <img
+                class="assets__image"
+                src="./img/card2.png"
+                width="165"
+                height="297"
+              />
+              <p class="assets__text">Enter</p>
+            </div>
 
-          <div class="assets__card">
-            <img
-              class="assets__image"
-              src="./img/card3.png"
-              width="165"
-              height="297"
-            />
-            <p class="assets__text">Enter</p>
-          </div>
+            <div class="assets__card">
+              <img
+                class="assets__image"
+                src="./img/card3.png"
+                width="165"
+                height="297"
+              />
+              <p class="assets__text">Enter</p>
+            </div>
 
-          <div class="assets__card">
-            <img
-              class="assets__image"
-              src="./img/card4.png"
-              width="165"
-              height="297"
-            />
-            <p class="assets__text">Enter</p>
-          </div>
+            <div class="assets__card">
+              <img
+                class="assets__image"
+                src="./img/card4.png"
+                width="165"
+                height="297"
+              />
+              <p class="assets__text">Enter</p>
+            </div>
 
-          <div class="assets__card">
-            <img
-              class="assets__image"
-              src="./img/card5.png"
-              width="165"
-              height="297"
-            />
-            <p class="assets__text">Enter</p>
-          </div>
+            <div class="assets__card">
+              <img
+                class="assets__image"
+                src="./img/card5.png"
+                width="165"
+                height="297"
+              />
+              <p class="assets__text">Enter</p>
+            </div>
 
-          <div class="assets__card">
-            <img
-              class="assets__image"
-              src="./img/card6.png"
-              width="165"
-              height="297"
-            />
-            <p class="assets__text">Enter</p>
-          </div>
+            <div class="assets__card">
+              <img
+                class="assets__image"
+                src="./img/card6.png"
+                width="165"
+                height="297"
+              />
+              <p class="assets__text">Enter</p>
+            </div>
 
-          <div class="assets__card">
-            <img
-              class="assets__image"
-              src="./img/card7.png"
-              width="165"
-              height="297"
-            />
-            <p class="assets__text">Enter</p>
-          </div>
+            <div class="assets__card">
+              <img
+                class="assets__image"
+                src="./img/card7.png"
+                width="165"
+                height="297"
+              />
+              <p class="assets__text">Enter</p>
+            </div>
 
-          <div class="assets__card">
-            <img
-              class="assets__image"
-              src="./img/card8.png"
-              width="165"
-              height="297"
-            />
-            <p class="assets__text">Enter</p>
+            <div class="assets__card">
+              <img
+                class="assets__image"
+                src="./img/card8.png"
+                width="165"
+                height="297"
+              />
+              <p class="assets__text">Enter</p>
+            </div>
           </div>
         </div>
       </section>
-
       <!------------------ clients ----------------------------->
 
       <section class="clients">
         <h2 class="clients__title title">Наши клиенты</h2>
-        <div class="clients__wrapper" id="clientsWrapper"></div>
+        <div class="clients__wrapper" id="clientsWrapper">
+          <img src="./img/clients-name-whole.png" />
+        </div>
       </section>
     </main>
 
@@ -603,6 +607,8 @@
       </div>
       <div id="example"></div>
     </footer>
+
+    <script src="./js/assets.js"></script>
 
     <script src="./js/clients.js"></script>
     <script src="./js/about-us-hover.js"></script>
