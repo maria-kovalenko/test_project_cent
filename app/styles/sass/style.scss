@@ -333,6 +333,7 @@ input[type="radio"].visually-hidden {
 .main-contacts__adress {
   max-width: 47%;
   margin: 0;
+  cursor: pointer;
 }
 
 @media (min-width: $desktop-width) {
@@ -347,15 +348,53 @@ input[type="radio"].visually-hidden {
 }
 
 .main-contacts__email {
+  position: relative;
   max-width: 47%;
   margin: 0;
   align-self: end;
+  cursor: pointer;
+}
+
+.main-contacts__email:hover {
+  &::before {
+    position: absolute;
+    content: "";
+    width: 100%;
+    height: 89px;
+    top: -85px;
+    left: 0;
+    background: url(../../../img/mail.svg) 0 0 no-repeat;
+    background-size: contain;
+    animation: mail 0.7s forwards;
+    transform: translateY(500%);
+  }
 }
 
 @media (min-width: $desktop-width) {
   .main-contacts__email {
     font-size: 20px;
     line-height: 24px;
+  }
+}
+
+@keyframes mail {
+  20% {
+    transform: translateY(-50px);
+  }
+  40% {
+    transform: translateY(50px);
+  }
+
+  60% {
+    transform: translateY(-20px);
+  }
+
+  80% {
+    transform: translateY(20px);
+  }
+
+  100% {
+    transform: translateY(0);
   }
 }
 
@@ -695,6 +734,138 @@ input[type="radio"].visually-hidden {
   transform: rotate(45deg);
 }
 
+// ----------------------------- results ----------------------------------
+
+.results {
+  display: block;
+}
+
+.back-wrapper {
+  position: relative;
+  display: inline-block;
+  margin-top: 22px;
+  margin-bottom: 40px;
+}
+
+@media (min-width: $desktop-width) {
+  .back-wrapper {
+    margin-bottom: 60px;
+  }
+}
+
+.back-text-btn {
+  position: relative;
+  display: inline-block;
+  font-size: 10px;
+  padding-left: 10px;
+}
+
+.back-text-btn::before {
+  position: absolute;
+  content: "";
+  top: 15px;
+  left: 0;
+  width: 36px;
+  height: 1px;
+  background-color: #fff;
+}
+
+.results-arrow-position {
+  position: absolute;
+  top: 38px;
+  left: 13px;
+  transform: rotate(135deg);
+}
+
+.card-description {
+  margin-bottom: 60px;
+}
+
+@media (min-width: $desktop-width) {
+  .card-description {
+    margin-bottom: 129px;
+  }
+  .card-description__wrapper {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 70px;
+  }
+}
+
+.card-description__title {
+  margin-bottom: 10px;
+}
+
+.card-description__subtitle {
+  margin: 0;
+  margin-bottom: 20px;
+}
+
+@media (min-width: $desktop-width) {
+  .card-description__subtitle {
+    margin-bottom: 30px;
+  }
+}
+
+.card-description__text-top {
+  margin-top: 0;
+  margin-bottom: 20px;
+  text-align: justify;
+}
+
+@media (min-width: $desktop-width) {
+  .card-description__text-top {
+    margin-top: 0;
+    margin-bottom: 20px;
+    font-size: 20px;
+    line-height: 24px;
+    text-align: left;
+  }
+}
+
+.card-description__column-right {
+  margin-bottom: 20px;
+  height: 263px;
+  background-image: url(../../../img/image11case.png);
+  background-position: 0 0;
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+
+@media (min-width: $desktop-width) {
+  .card-description__column-left {
+    width: 514px;
+  }
+
+  .card-description__column-right {
+    width: 600px;
+    height: auto;
+    background-size: cover;
+  }
+}
+
+.card-description__text-bottom {
+  margin: 0;
+  margin-bottom: 20px;
+  font-size: 20px;
+  line-height: 24px;
+  text-align: justify;
+}
+
+@media (min-width: $desktop-width) {
+  .card-description__text-bottom {
+    padding-right: 33px;
+    margin-bottom: 20px;
+    text-align: left;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .other-cases__title {
+    display: none;
+  }
+}
+
 // ------------------ assets -----------------------------
 
 .assets__title {
@@ -715,6 +886,9 @@ input[type="radio"].visually-hidden {
 
 .assets__wrapper {
   padding: 40px 15px;
+  display: flex;
+
+  overflow-x: scroll;
   background-color: #001cad;
 }
 
@@ -724,6 +898,7 @@ input[type="radio"].visually-hidden {
     overflow-x: scroll;
     padding: 0;
     padding-left: 15px;
+    padding-right: 15px;
     padding-bottom: 152px;
   }
   // .assets__wrapper {
@@ -741,13 +916,13 @@ input[type="radio"].visually-hidden {
 .assets__card {
   position: relative;
   display: inline-block;
-  width: 165px;
+  min-width: 165px;
+  min-height: 297px;
   margin-right: 15px;
-  margin-bottom: 15px;
+  // margin-bottom: 15px;
 
   &:last-child {
     margin-right: 0;
-    margin-bottom: 0;
   }
 }
 
@@ -1082,4 +1257,18 @@ input[type="radio"].visually-hidden {
 
 .copyrite__text {
   margin: 0;
+}
+
+.modal {
+  animation: example 1s ease-in-out forwards;
+  transform: translate(-100%);
+}
+
+@keyframes example {
+  0% {
+    transform: translateY(-100%);
+  }
+  100% {
+    transform: translateY(0);
+  }
 }
