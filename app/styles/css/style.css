@@ -497,9 +497,28 @@ input[type=radio].visually-hidden {
 }
 @media (min-width:1440px) {
   .advantages {
+    position: relative;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex
+  }
+  .advantages::before {
+    position: absolute;
+    content: "";
+    top: 0;
+    left: 28%;
+    width: 1px;
+    height: 78%;
+    background-color: #fff
+  }
+  .advantages::after {
+    position: absolute;
+    content: "";
+    top: 0;
+    left: 62%;
+    width: 1px;
+    height: 78%;
+    background-color: #fff
   }
 }
 .advantages__media {
@@ -522,6 +541,8 @@ input[type=radio].visually-hidden {
 }
 @media (min-width:1440px) {
   .advantages__media {
+    margin-top: 0;
+    margin-bottom: 190px;
     width: 33%
   }
   .advantages__media:nth-child(7) {

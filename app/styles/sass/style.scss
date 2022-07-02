@@ -513,7 +513,28 @@ input[type="radio"].visually-hidden {
 
 @media (min-width: $desktop-width) {
   .advantages {
+    position: relative;
     display: flex;
+  }
+
+  .advantages::before {
+    position: absolute;
+    content: "";
+    top: 0;
+    left: 28%;
+    width: 1px;
+    height: 78%;
+    background-color: #fff;
+  }
+
+  .advantages::after {
+    position: absolute;
+    content: "";
+    top: 0;
+    left: 62%;
+    width: 1px;
+    height: 78%;
+    background-color: #fff;
   }
 }
 
@@ -526,15 +547,12 @@ input[type="radio"].visually-hidden {
     width: 100%;
     text-align: center;
     margin: 50px auto 0;
-    // margin-bottom: 40px;
   }
 
   &:nth-child(8) {
     width: 100%;
     text-align: center;
     margin: 50px auto 0;
-
-    // margin-bottom: 40px;
   }
 
   &:last-child {
@@ -544,6 +562,8 @@ input[type="radio"].visually-hidden {
 
 @media (min-width: $desktop-width) {
   .advantages__media {
+    margin-top: 0;
+    margin-bottom: 190px;
     width: 33%;
     &:nth-child(7) {
       width: 33%;
