@@ -618,15 +618,36 @@ input[type=radio].visually-hidden {
     justify-content: space-between
   }
 }
+.cases__column-left {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  overflow-x: scroll;
+  margin-bottom: 20px
+}
+.cases__column-right {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  overflow-x: scroll
+}
 .cases__card {
-  margin-bottom: 30px
+  min-width: 100%;
+  margin-right: 20px
+}
+.cases__card:last-child {
+  margin-right: 0
 }
 @media (min-width:1440px) {
   .cases__column-left {
-    width: 540px
+    display: block;
+    width: 540px;
+    overflow: hidden
   }
   .cases__column-right {
-    width: 570px
+    display: block;
+    width: 570px;
+    overflow: hidden
   }
   .card__image-little {
     width: 540px
@@ -683,7 +704,7 @@ input[type=radio].visually-hidden {
   transform: rotate(45deg)
 }
 .results {
-  display: block
+  display: none
 }
 .back-wrapper {
   position: relative;
