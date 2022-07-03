@@ -10,7 +10,16 @@
 
   <body>
     <!------------------ header ----------------------------->
-
+    <section class="modal">
+      <h2 class="visually-hidden">Как до нас добраться</h2>
+      <img
+        class="modal__map"
+        src="./img/map-desktop.png"
+        width="375"
+        height="769"
+        alt="Карта проезда"
+      />
+    </section>
     <header class="page-header">
       <div class="page-header__wrapper container">
         <div class="page-header__logo logo">
@@ -55,16 +64,6 @@
       </div>
     </header>
 
-    <section class="modal">
-      <h2 class="visually-hidden">Как до нас добраться</h2>
-      <img
-        class="modal__map"
-        src="./img/map-desktop.png"
-        width="375"
-        height="769"
-        alt="Карта проезда"
-      />
-    </section>
     <!------------------ main ----------------------------->
 
     <main class="page-main">
@@ -73,11 +72,11 @@
       </div>
 
       <div class="page-main__contacts main-contacts container">
-        <p class="main-contacts__adress">
+        <button type="button" class="main-contacts__adress">
           Казань,<br />
           Карла Маркса 5
-        </p>
-        <p class="main-contacts__email">info@cent</p>
+        </button>
+        <a href="#" class="main-contacts__email">info@cent</a>
       </div>
 
       <section class="about-us container">
@@ -92,60 +91,69 @@
           </p>
 
           <div class="about-us__wrapper">
-            <a href="#" class="about-us__communicate">Связаться</a>
-            <a href="#" class="about-us__more-about-us">Больше о нас</a>
+            <button type="button" class="about-us__communicate">
+              Связаться
+            </button>
+            <button type="button" class="about-us__more-about-us">
+              Больше о нас
+            </button>
           </div>
-        </div>
-      </section>
-      <!------------------ advantages ----------------------------->
-
-      <section class="advantages container">
-        <div class="advantages__media">
-          <h2 class="advantages__title">Сми</h2>
-          <p class="advantages__numeral">> 2 млн</p>
-          <p class="advantages__description">ежемесечная аудитория</p>
-        </div>
-
-        <div class="advantages__media">
-          <h2 class="advantages__title">Соцсети</h2>
-          <p class="advantages__numeral">> 14 млн</p>
-          <p class="advantages__description">ежемесечный охват</p>
-        </div>
-
-        <div class="advantages__media">
-          <h2 class="advantages__title">Pr</h2>
-          <p class="advantages__numeral">> 30</p>
-          <p class="advantages__description">
-            решенных информационных кризисов
-          </p>
-        </div>
-
-        <div class="advantages__media">
-          <h2 class="advantages__title">Креатив</h2>
-          <p class="advantages__numeral">> 150</p>
-          <p class="advantages__description">Инфоповодов федерального уровня</p>
-        </div>
-
-        <div class="advantages__media">
-          <h2 class="advantages__title">Блогеры</h2>
-          <p class="advantages__numeral">> 1000</p>
-          <p class="advantages__description plr-95">
-            Интеграции с инфлюенсерами
-          </p>
-        </div>
-
-        <div class="advantages__media">
-          <h2 class="advantages__title">Мероприятия</h2>
-          <p class="advantages__numeral">> 400</p>
-          <p class="advantages__description plr-50">
-            Событий регионального и федерального масштаба с общим охватом 45 млн
-          </p>
         </div>
       </section>
 
       <!------------------ cases ----------------------------->
 
       <section class="cases container">
+        <!------------------ advantages ----------------------------->
+
+        <section class="advantages container">
+          <div class="advantages__media">
+            <h2 class="advantages__title">Сми</h2>
+            <p class="advantages__numeral">> 2 млн</p>
+            <p class="advantages__description">ежемесечная аудитория</p>
+          </div>
+
+          <div class="advantages__media">
+            <h2 class="advantages__title">Соцсети</h2>
+            <p class="advantages__numeral">> 14 млн</p>
+            <p class="advantages__description">ежемесечный охват</p>
+          </div>
+
+          <div class="advantages__media">
+            <h2 class="advantages__title">Pr</h2>
+            <p class="advantages__numeral">> 30</p>
+            <p class="advantages__description">
+              решенных информационных кризисов
+            </p>
+          </div>
+
+          <div class="advantages__media">
+            <h2 class="advantages__title">Креатив</h2>
+            <p class="advantages__numeral">> 150</p>
+            <p class="advantages__description">
+              Инфоповодов федерального уровня
+            </p>
+          </div>
+
+          <div class="advantages__media">
+            <h2 class="advantages__title">Блогеры</h2>
+            <p class="advantages__numeral">> 1000</p>
+            <p class="advantages__description plr-95">
+              Интеграции с инфлюенсерами
+            </p>
+          </div>
+
+          <div class="advantages__media">
+            <h2 class="advantages__title">Мероприятия</h2>
+            <p class="advantages__numeral">> 400</p>
+            <p class="advantages__description plr-50">
+              Событий регионального и федерального масштаба с общим охватом 45
+              млн
+            </p>
+          </div>
+        </section>
+        <!------------------ advantages ----------------------------->
+
         <h2 class="cases__title title">Кейсы</h2>
 
         <div class="cases__card-wrapper">

@@ -17,7 +17,7 @@
 body {
   min-width: 375px;
   max-width: 1920px;
-  margin: 0;
+  margin: 0 auto;
   padding: 0;
   font-size: 16px;
   line-height: 20px;
@@ -37,11 +37,22 @@ ul {
 a {
   text-decoration: none;
   color: #fff;
-  cursor: pointer
+  cursor: pointer;
+  font-family: Montserrat,sans-serif,serif
 }
 p {
   font-family: Montserrat,sans-serif,serif;
   word-wrap: break-word
+}
+button {
+  padding: 0;
+  border: none;
+  outline: 0;
+  background-color: #000;
+  color: #fff;
+  font-family: Montserrat,sans-serif,serif;
+  text-align: left;
+  cursor: pointer
 }
 .button {
   display: inline-block;
@@ -84,6 +95,7 @@ input[type=radio].visually-hidden {
 }
 .page-header {
   width: 100%;
+  max-width: 1920px;
   margin-bottom: 80px;
   background-color: #000;
   z-index: 1
@@ -222,10 +234,7 @@ input[type=radio].visually-hidden {
     margin-right: 50px
   }
   .main-nav__link {
-    position: relative;
-    -webkit-transition: .2s;
-    -o-transition: .2s;
-    transition: .2s
+    position: relative
   }
   .main-nav__link:hover::before {
     position: absolute;
@@ -277,7 +286,7 @@ input[type=radio].visually-hidden {
 }
 @media (min-width:1440px) {
   .page-main__title-wrapper {
-    width: 70%;
+    width: 72%;
     margin-bottom: 252px;
     padding-top: 353px
   }
@@ -309,8 +318,7 @@ input[type=radio].visually-hidden {
 }
 .main-contacts__adress {
   max-width: 47%;
-  margin: 0;
-  cursor: pointer
+  margin: 0
 }
 @media (min-width:1440px) {
   .main-contacts__adress {
@@ -468,6 +476,7 @@ input[type=radio].visually-hidden {
   max-width: 47%;
   margin: 0;
   line-height: 19px;
+  font-size: 16px;
   font-family: Druk-Wide-Cyr,sans-serif,serif
 }
 @media (min-width:1440px) {
@@ -479,7 +488,8 @@ input[type=radio].visually-hidden {
   margin: 0;
   line-height: 19px;
   font-family: Druk-Wide-Cyr,sans-serif,serif;
-  text-align: right
+  text-align: right;
+  font-size: 16px
 }
 @media (min-width:1440px) {
   .about-us__more-about-us {
@@ -487,7 +497,18 @@ input[type=radio].visually-hidden {
   }
 }
 .advantages {
-  position: relative;
+  width: 100%;
+  position: absolute;
+  opacity: 0;
+  z-index: -1;
+  -webkit-transition: -webkit-transform .9s;
+  transition: -webkit-transform .9s;
+  -o-transition: transform .9s;
+  transition: transform .9s;
+  transition: transform .9s,-webkit-transform .9s;
+  -webkit-transform: translateY(-900px);
+  -ms-transform: translateY(-900px);
+  transform: translateY(-900px);
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -517,9 +538,15 @@ input[type=radio].visually-hidden {
   height: 1px;
   background-color: #fff
 }
+.advantages.show_advantages {
+  -webkit-transform: translateY(-30px);
+  -ms-transform: translateY(-30px);
+  transform: translateY(-30px);
+  opacity: 1;
+  z-index: 1
+}
 @media (min-width:1440px) {
   .advantages {
-    position: relative;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -692,6 +719,7 @@ input[type=radio].visually-hidden {
 }
 @media (min-width:1440px) {
   .cases__card {
+    margin-right: 0;
     margin-bottom: 40px
   }
   .cases__card:last-child {
@@ -718,6 +746,11 @@ input[type=radio].visually-hidden {
 .cases__title {
   margin: 0;
   margin-bottom: 20px
+}
+@media (min-width:1440px) {
+  .cases__title {
+    margin-bottom: 60px
+  }
 }
 .card__title {
   margin-top: 10px;
@@ -1293,14 +1326,24 @@ input[type=radio].visually-hidden {
   margin: 0
 }
 .modal {
-  z-index: 9999;
+  display: none;
+  width: 100%;
   position: absolute;
-  top: -900px;
-  display: block;
+  z-index: -1;
   opacity: 0;
+  -webkit-transform: translateY(-900px);
+  -ms-transform: translateY(-900px);
+  transform: translateY(-900px);
   -webkit-transition: opacity 1s;
   -o-transition: opacity 1s;
   transition: opacity 1s
+}
+.modal.show_modal {
+  -webkit-transform: translateY(0);
+  -ms-transform: translateY(0);
+  transform: translateY(0);
+  opacity: 1;
+  z-index: 2
 }
 .modal__map {
   min-width: 1300px;

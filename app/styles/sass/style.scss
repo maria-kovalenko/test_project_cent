@@ -27,7 +27,7 @@ $desktop-width: 1440px;
 body {
   min-width: 375px;
   max-width: 1920px;
-  margin: 0;
+  margin: 0 auto;
   padding: 0;
   font-size: 16px;
   line-height: 20px;
@@ -51,11 +51,24 @@ a {
   text-decoration: none;
   color: #fff;
   cursor: pointer;
+  font-family: "Montserrat", sans-serif, serif;
 }
 
 p {
   font-family: "Montserrat", sans-serif, serif;
   word-wrap: break-word;
+}
+
+button {
+  padding: 0;
+  border: none;
+  outline: none;
+  background-color: #000;
+  color: #fff;
+  font-family: "Montserrat", sans-serif, serif;
+
+  text-align: left;
+  cursor: pointer;
 }
 
 .button {
@@ -108,6 +121,7 @@ input[type="radio"].visually-hidden {
 
 .page-header {
   width: 100%;
+  max-width: 1920px;
   margin-bottom: 80px;
   background-color: #000;
   z-index: 1;
@@ -253,7 +267,6 @@ input[type="radio"].visually-hidden {
   }
   .main-nav__link {
     position: relative;
-    transition: 0.2s;
   }
 
   .main-nav__link:hover {
@@ -293,7 +306,7 @@ input[type="radio"].visually-hidden {
 
 @media (min-width: $desktop-width) {
   .page-main__title-wrapper {
-    width: 70%;
+    width: 72%;
     margin-bottom: 252px;
     padding-top: 353px;
   }
@@ -327,7 +340,6 @@ input[type="radio"].visually-hidden {
 .main-contacts__adress {
   max-width: 47%;
   margin: 0;
-  cursor: pointer;
 }
 
 @media (min-width: $desktop-width) {
@@ -471,6 +483,7 @@ input[type="radio"].visually-hidden {
   max-width: 47%;
   margin: 0;
   line-height: 19px;
+  font-size: 16px;
   font-family: "Druk-Wide-Cyr", sans-serif, serif;
 }
 
@@ -485,6 +498,7 @@ input[type="radio"].visually-hidden {
   line-height: 19px;
   font-family: "Druk-Wide-Cyr", sans-serif, serif;
   text-align: right;
+  font-size: 16px;
 }
 
 @media (min-width: $desktop-width) {
@@ -496,7 +510,12 @@ input[type="radio"].visually-hidden {
 // ------------------ advantages -----------------------------
 
 .advantages {
-  position: relative;
+  width: 100%;
+  position: absolute;
+  opacity: 0;
+  z-index: -1;
+  transition: transform 0.9s;
+  transform: translateY(-900px);
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
@@ -524,9 +543,14 @@ input[type="radio"].visually-hidden {
   background-color: #fff;
 }
 
+.advantages.show_advantages {
+  transform: translateY(-30px);
+  opacity: 1;
+  z-index: 1;
+}
+
 @media (min-width: $desktop-width) {
   .advantages {
-    position: relative;
     display: flex;
     margin-top: -100px;
   }
@@ -724,6 +748,7 @@ input[type="radio"].visually-hidden {
 
 @media (min-width: $desktop-width) {
   .cases__card {
+    margin-right: 0;
     margin-bottom: 40px;
 
     &:last-child {
@@ -755,6 +780,12 @@ input[type="radio"].visually-hidden {
 .cases__title {
   margin: 0;
   margin-bottom: 20px;
+}
+
+@media (min-width: $desktop-width) {
+  .cases__title {
+    margin-bottom: 60px;
+  }
 }
 
 .card__title {
@@ -1344,31 +1375,25 @@ input[type="radio"].visually-hidden {
 }
 
 .modal {
-  // display: none;
-
-  // animation: example 1s ease-in-out forwards;
-  // transform: translate(-100%);
-  z-index: 9999;
+  display: none;
+  width: 100%;
   position: absolute;
-  top: -900px;
-  display: block;
+  z-index: -1;
   opacity: 0;
+  transform: translateY(-900px);
   transition: opacity 1s;
+}
+
+.modal.show_modal {
+  transform: translateY(0);
+  opacity: 1;
+  z-index: 2;
 }
 
 .modal__map {
   min-width: 1300px;
   transform: translateX(-380px);
 }
-
-// @keyframes example {
-//   0% {
-//     transform: translateY(-100%);
-//   }
-//   100% {
-//     transform: translateY(0);
-//   }
-// }
 
 @media (min-width: 900px) {
   img.modal__map {
