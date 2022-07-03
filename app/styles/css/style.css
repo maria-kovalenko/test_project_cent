@@ -487,6 +487,7 @@ input[type=radio].visually-hidden {
   }
 }
 .advantages {
+  position: relative;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -497,6 +498,24 @@ input[type=radio].visually-hidden {
   justify-content: space-between;
   text-transform: uppercase;
   background-color: #000
+}
+.advantages::before {
+  position: absolute;
+  content: "";
+  top: 23%;
+  left: 0;
+  width: 100%;
+  height: 1px;
+  background-color: #fff
+}
+.advantages::after {
+  position: absolute;
+  content: "";
+  top: 48%;
+  left: 0;
+  width: 100%;
+  height: 1px;
+  background-color: #fff
 }
 @media (min-width:1440px) {
   .advantages {
@@ -510,7 +529,7 @@ input[type=radio].visually-hidden {
     position: absolute;
     content: "";
     top: 0;
-    left: 28%;
+    left: 27%;
     width: 1px;
     height: 78%;
     background-color: #fff
@@ -519,7 +538,7 @@ input[type=radio].visually-hidden {
     position: absolute;
     content: "";
     top: 0;
-    left: 62%;
+    left: 61%;
     width: 1px;
     height: 78%;
     background-color: #fff
@@ -530,12 +549,12 @@ input[type=radio].visually-hidden {
   margin-top: 50px;
   margin-bottom: 50px
 }
-.advantages__media:nth-child(7) {
+.advantages__media:nth-child(5) {
   width: 100%;
   text-align: center;
   margin: 50px auto 0
 }
-.advantages__media:nth-child(8) {
+.advantages__media:nth-child(6) {
   width: 100%;
   text-align: center;
   margin: 50px auto 0
@@ -549,12 +568,12 @@ input[type=radio].visually-hidden {
     margin-bottom: 190px;
     width: 33%
   }
-  .advantages__media:nth-child(7) {
+  .advantages__media:nth-child(5) {
     width: 33%;
     margin: 0;
     text-align: left
   }
-  .advantages__media:nth-child(8) {
+  .advantages__media:nth-child(6) {
     width: 33%;
     margin: 0;
     text-align: left
@@ -619,26 +638,6 @@ input[type=radio].visually-hidden {
     padding-right: 25%
   }
 }
-.advantages__line {
-  position: relative;
-  overflow: hidden;
-  width: 100%;
-  height: 1px
-}
-.advantages__line::before {
-  position: absolute;
-  content: "";
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 1px;
-  background-color: #fff
-}
-@media (min-width:1440px) {
-  .advantages__line {
-    display: none
-  }
-}
 .cases {
   position: relative;
   margin-bottom: 80px
@@ -685,7 +684,7 @@ input[type=radio].visually-hidden {
   overflow-x: scroll
 }
 .cases__card {
-  min-width: 100%;
+  min-width: 345px;
   margin-right: 20px
 }
 .cases__card:last-child {

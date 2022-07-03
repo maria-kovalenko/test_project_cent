@@ -9,18 +9,8 @@
   </head>
 
   <body>
-    <!-- style="opacity:0;transition: 2s;" -->
     <!------------------ header ----------------------------->
-    <section class="modal">
-      <h2 class="visually-hidden">Как до нас добраться</h2>
-      <img
-        class="modal__map"
-        src="./img/map-desktop.png"
-        width="375"
-        height="769"
-        alt="Карта проезда"
-      />
-    </section>
+
     <header class="page-header">
       <div class="page-header__wrapper container">
         <div class="page-header__logo logo">
@@ -65,6 +55,16 @@
       </div>
     </header>
 
+    <section class="modal">
+      <h2 class="visually-hidden">Как до нас добраться</h2>
+      <img
+        class="modal__map"
+        src="./img/map-desktop.png"
+        width="375"
+        height="769"
+        alt="Карта проезда"
+      />
+    </section>
     <!------------------ main ----------------------------->
 
     <main class="page-main">
@@ -111,7 +111,6 @@
           <p class="advantages__numeral">> 14 млн</p>
           <p class="advantages__description">ежемесечный охват</p>
         </div>
-        <div class="advantages__line"></div>
 
         <div class="advantages__media">
           <h2 class="advantages__title">Pr</h2>
@@ -126,8 +125,6 @@
           <p class="advantages__numeral">> 150</p>
           <p class="advantages__description">Инфоповодов федерального уровня</p>
         </div>
-
-        <div class="advantages__line"></div>
 
         <div class="advantages__media">
           <h2 class="advantages__title">Блогеры</h2>
@@ -606,45 +603,11 @@
       <div id="example"></div>
     </footer>
 
-   
-
     <script src="./js/assets.js"></script>
     <script src="./js/map.js"></script>
     <script src="./js/clients.js"></script>
     <script src="./js/about-us-hover.js"></script>
     <script src="./js/email.js"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
-    <!-- <script>$(document).ready(function () {
-      $(".about-us__more-about-us").hover(function () {
-        $(".advantages").slideDown("slow");
-      });
-    });
-    </script> -->
-
-    <!-- <script>
-      $(document).ready(function() {    
-        $("body").css("opacity", "1");
-      });
-    </script> -->
-
-    <!-- <script>
-$(function(){
-   var doc_h = $(window).height();
-   
-       $(window).scroll(function(){  
-        if ($(window).scrollTop() > doc_h/2)
-        {
-            $('.cases__button-wrapper').css('display', 'block');            
-        }
-        else{
-            $('.cases__button-wrapper').css('display', 'none');
-            };
-      } ); 
-      
-   $('.cases__button-wrapper').click(function(){
-       $(window).scrollTop(0);
-});                
-});
-</script> -->
   </body>
 </html>
