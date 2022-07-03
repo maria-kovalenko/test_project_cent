@@ -9,272 +9,9 @@
   </head>
 
   <body>
-    <!------------------ header ----------------------------->
-    <section class="modal">
-      <h2 class="visually-hidden">Как до нас добраться</h2>
-      <img
-        class="modal__map"
-        src="./img/map-desktop.png"
-        width="375"
-        height="769"
-        alt="Карта проезда"
-      />
-    </section>
-    <header class="page-header">
-      <div class="page-header__wrapper container">
-        <div class="page-header__logo logo">
-          <a href="index.html">
-            <svg style="display: none">
-              <symbol id="logo" viewBox="0 0 65 17">
-                <path
-                  d="M11.32 16.26C19.82 16.26 21.3 12.1 21.3 10.22V10H16.36C16.24 10.34 15.76 12.64 10.94 12.64C6.6 12.64 5.42 10.32 5.42 8.56V8.32C5.42 6.46 6.44 4.46 10.9 4.46C15.62 4.46 16.22 6.54 16.34 6.94H21.28V6.72C21.28 4.98 19.94 0.859999 11.32 0.859999H10.5C1.7 0.859999 0.54 5.52 0.54 8.22V8.8C0.54 11.44 1.88 16.26 10.5 16.26H11.32ZM30.2773 7.44C32.5373 7.44 33.5773 8.12 33.8773 9.26H26.6773C27.0173 8.12 28.0173 7.44 30.2573 7.44H30.2773ZM38.3173 12.2H33.9173C33.8573 12.46 33.3773 13.58 30.4173 13.58H30.3973C27.9373 13.58 26.8573 12.74 26.5973 11.48H38.3773V10.74C38.3773 8.12 37.2173 4.94 30.8973 4.94H29.6773C23.8573 4.94 22.2173 7.6 22.2173 10.36V10.8C22.2173 13.62 24.0573 16.3 29.7973 16.3H30.9373C37.3573 16.3 38.3173 13.68 38.3173 12.22V12.2ZM39.7291 16H44.1891V10.92C44.1891 9.16 45.4891 8 47.4891 8C49.4691 8 50.3691 9.02 50.3691 10.68V16H54.8691V9.2C54.8691 7.12 53.3891 5 49.6291 5H49.4891C46.2891 5 44.6891 6.54 44.1491 7.08V5.24H39.7291V16ZM64.3688 16V13.04H63.1488C62.3688 13.04 62.2488 12.68 62.2488 12.1V8.2H64.3688V5.24H62.2488V2.1H57.8488V5.24H55.7488V8.2H57.8488V12.94C57.8488 14.8 58.5688 16 60.5088 16H64.3688Z"
-                  fill="white"
-                />
-              </symbol>
-            </svg>
-            <svg width="65" height="17" class="logo__image">
-              <use xlink:href="#logo"></use>
-            </svg>
-          </a>
-        </div>
+    <!-- -----------------results--------------------- -->
 
-        <nav class="main-nav">
-          <ul class="main-nav__list">
-            <li class="main-nav__item">
-              <a class="main-nav__link" href="#">кейсы</a>
-            </li>
-            <li class="main-nav__item">
-              <a class="main-nav__link" href="#">о нас</a>
-            </li>
-            <li class="main-nav__item">
-              <a class="main-nav__link" href="#">контакты</a>
-            </li>
-            <li class="main-nav__item">
-              <a class="main-nav__link" href="#">новости</a>
-            </li>
-            <li class="main-nav__item">
-              <a class="main-nav__link" href="#">клиенты</a>
-            </li>
-          </ul>
-        </nav>
-
-        <button
-          class="page-header__toggle page-header__toggle--closed"
-        ></button>
-      </div>
-    </header>
-
-    <!------------------ main ----------------------------->
-
-    <main class="page-main">
-      <div class="page-main__title-wrapper">
-        <h1 class="page-main__title">Больше чем тенге</h1>
-      </div>
-
-      <div class="page-main__contacts main-contacts container">
-        <button type="button" class="main-contacts__adress">
-          Казань,<br />
-          Карла Маркса 5
-        </button>
-        <a href="#" class="main-contacts__email">info@cent</a>
-      </div>
-
-      <section class="about-us container">
-        <div class="about-us__column-left">
-          <h2 class="about-us__title title">О нас</h2>
-        </div>
-        <div class="about-us__column-right">
-          <p class="about-us__text">
-            Цент –– это агенство, представляющее полный комплекс услуг в области
-            digital - маркетинга и креатива. Агентсво обладает крупнейшей
-            инфраструктурой в социальных сетях в мире.
-          </p>
-
-          <div class="about-us__wrapper">
-            <button type="button" class="about-us__communicate">
-              Связаться
-            </button>
-            <button type="button" class="about-us__more-about-us">
-              Больше о нас
-            </button>
-          </div>
-        </div>
-      </section>
-
-      <!------------------ cases ----------------------------->
-
-      <section class="cases container">
-        <!------------------ advantages ----------------------------->
-
-        <section class="advantages container">
-          <div class="advantages__media">
-            <h2 class="advantages__title">Сми</h2>
-            <p class="advantages__numeral">> 2 млн</p>
-            <p class="advantages__description">ежемесечная аудитория</p>
-          </div>
-
-          <div class="advantages__media">
-            <h2 class="advantages__title">Соцсети</h2>
-            <p class="advantages__numeral">> 14 млн</p>
-            <p class="advantages__description">ежемесечный охват</p>
-          </div>
-
-          <div class="advantages__media">
-            <h2 class="advantages__title">Pr</h2>
-            <p class="advantages__numeral">> 30</p>
-            <p class="advantages__description">
-              решенных информационных кризисов
-            </p>
-          </div>
-
-          <div class="advantages__media">
-            <h2 class="advantages__title">Креатив</h2>
-            <p class="advantages__numeral">> 150</p>
-            <p class="advantages__description">
-              Инфоповодов федерального уровня
-            </p>
-          </div>
-
-          <div class="advantages__media">
-            <h2 class="advantages__title">Блогеры</h2>
-            <p class="advantages__numeral">> 1000</p>
-            <p class="advantages__description plr-95">
-              Интеграции с инфлюенсерами
-            </p>
-          </div>
-
-          <div class="advantages__media">
-            <h2 class="advantages__title">Мероприятия</h2>
-            <p class="advantages__numeral">> 400</p>
-            <p class="advantages__description plr-50">
-              Событий регионального и федерального масштаба с общим охватом 45
-              млн
-            </p>
-          </div>
-        </section>
-        <!------------------ advantages ----------------------------->
-
-        <h2 class="cases__title title">Кейсы</h2>
-
-        <div class="cases__card-wrapper">
-          <div class="cases__column-left">
-            <div class="cases__card card">
-              <a class="card__link">
-                <img
-                  class="card__image-little"
-                  src="./img/image1case.png"
-                  width="344"
-                  height="236"
-                  alt="Итоги года"
-              /></a>
-              <p class="card__title">Итоги года 2021</p>
-              <p class="card__subtitle">Ежегодная премия</p>
-            </div>
-
-            <div class="cases__card card">
-              <a class="card__link">
-                <img
-                  class="card__image-little"
-                  src="./img/image2case.png"
-                  width="344"
-                  height="236"
-                  alt="Итоги года"
-              /></a>
-              <p class="card__title">Enter x Водоканал</p>
-              <p class="card__subtitle">Рекламная коммуникация</p>
-            </div>
-
-            <div class="cases__card card">
-              <a class="card__link">
-                <img
-                  class="card__image-little"
-                  src="./img/image3case.png"
-                  width="344"
-                  height="236"
-                  alt="Итоги года"
-              /></a>
-              <p class="card__title">Итоги года 2021</p>
-              <p class="card__subtitle">Ежегодная премия</p>
-            </div>
-
-            <div class="cases__card card">
-              <a class="card__link">
-                <img
-                  class="card__image-little"
-                  src="./img/image4case.png"
-                  width="344"
-                  height="236"
-                  alt="Итоги года"
-              /></a>
-              <p class="card__title">Enter x Водоканал</p>
-              <p class="card__subtitle">Рекламная коммуникация</p>
-            </div>
-          </div>
-
-          <div class="cases__column-right">
-            <div class="cases__card card">
-              <a class="card__link">
-                <img
-                  class="card__image-big"
-                  src="./img/image5case.png"
-                  width="344"
-                  height="236"
-                  alt="Итоги года"
-              /></a>
-              <p class="card__title">Фестиваль «Профсоюзная»</p>
-              <p class="card__subtitle">Уличный фестиваль</p>
-            </div>
-
-            <div class="cases__card card">
-              <a class="card__link">
-                <img
-                  class="card__image-big"
-                  src="./img/image6case.png"
-                  width="344"
-                  height="236"
-                  alt="Итоги года"
-              /></a>
-              <p class="card__title">Мой прекрасный Татарстан</p>
-              <p class="card__subtitle">Фотомарафон</p>
-            </div>
-
-            <div class="cases__card card">
-              <a class="card__link">
-                <img
-                  class="card__image-big"
-                  src="./img/image7case.png"
-                  width="344"
-                  height="236"
-                  alt="Итоги года"
-              /></a>
-              <p class="card__title">Фестиваль «Профсоюзная»</p>
-              <p class="card__subtitle">Уличный фестиваль</p>
-            </div>
-
-            <div class="cases__card card">
-              <a class="card__link">
-                <img
-                  class="card__image-big"
-                  src="./img/image8case.png"
-                  width="344"
-                  height="236"
-                  alt="Итоги года"
-              /></a>
-              <p class="card__title">Мой прекрасный Татарстан</p>
-              <p class="card__subtitle">Фотомарафон</p>
-            </div>
-          </div>
-        </div>
-        <div class="cases__button-wrapper">
-          <button class="cases__button button" type="submit">
-            <span class="cases__text-btn">Показать еще</span
-            ><span class="arrow cases-arrow-position"></span>
-          </button>
-        </div>
-      </section>
-
-      <!-- -----------------results--------------------- -->
-
+    <div class="results-wrapper container">
       <section class="results container">
         <div class="back-wrapper">
           <button class="back-button button" type="submit">
@@ -321,7 +58,7 @@
         </section>
 
         <section class="other-cases cases">
-          <h2 class="other-cases__title title">Другие кейсы</h2>
+          <!-- <h2 class="other-cases__title title">Другие кейсы</h2> -->
 
           <div class="cases__card-wrapper">
             <div class="cases__column-left">
@@ -434,188 +171,453 @@
           </div>
         </section>
       </section>
+    </div>
 
-      <!------------------ assets ----------------------------->
-
-      <section class="assets">
-        <h2 class="assets__title title">Наши активы</h2>
-        <div class="assets__wrapper">
-          <div class="assets__scroll" id="assetsScroll">
-            <div class="assets__card">
-              <img
-                class="assets__image"
-                src="./img/card1.png"
-                width="165"
-                height="297"
-              />
-              <p class="assets__text">Enter</p>
-            </div>
-
-            <div class="assets__card">
-              <img
-                class="assets__image"
-                src="./img/card2.png"
-                width="165"
-                height="297"
-              />
-              <p class="assets__text">Enter</p>
-            </div>
-
-            <div class="assets__card">
-              <img
-                class="assets__image"
-                src="./img/card3.png"
-                width="165"
-                height="297"
-              />
-              <p class="assets__text">Enter</p>
-            </div>
-
-            <div class="assets__card">
-              <img
-                class="assets__image"
-                src="./img/card4.png"
-                width="165"
-                height="297"
-              />
-              <p class="assets__text">Enter</p>
-            </div>
-
-            <div class="assets__card">
-              <img
-                class="assets__image"
-                src="./img/card5.png"
-                width="165"
-                height="297"
-              />
-              <p class="assets__text">Enter</p>
-            </div>
-
-            <div class="assets__card">
-              <img
-                class="assets__image"
-                src="./img/card6.png"
-                width="165"
-                height="297"
-              />
-              <p class="assets__text">Enter</p>
-            </div>
-
-            <div class="assets__card">
-              <img
-                class="assets__image"
-                src="./img/card7.png"
-                width="165"
-                height="297"
-              />
-              <p class="assets__text">Enter</p>
-            </div>
-
-            <div class="assets__card">
-              <img
-                class="assets__image"
-                src="./img/card8.png"
-                width="165"
-                height="297"
-              />
-              <p class="assets__text">Enter</p>
-            </div>
-          </div>
-        </div>
+    <div class="page1">
+      <!------------------ header ----------------------------->
+      <section class="modal">
+        <h2 class="visually-hidden">Как до нас добраться</h2>
+        <img
+          class="modal__map"
+          src="./img/map-desktop.png"
+          width="375"
+          height="769"
+          alt="Карта проезда"
+        />
       </section>
-      <!------------------ clients ----------------------------->
+      <header class="page-header">
+        <div class="page-header__wrapper container">
+          <div class="page-header__logo logo">
+            <a href="index.html">
+              <svg style="display: none">
+                <symbol id="logo" viewBox="0 0 65 17">
+                  <path
+                    d="M11.32 16.26C19.82 16.26 21.3 12.1 21.3 10.22V10H16.36C16.24 10.34 15.76 12.64 10.94 12.64C6.6 12.64 5.42 10.32 5.42 8.56V8.32C5.42 6.46 6.44 4.46 10.9 4.46C15.62 4.46 16.22 6.54 16.34 6.94H21.28V6.72C21.28 4.98 19.94 0.859999 11.32 0.859999H10.5C1.7 0.859999 0.54 5.52 0.54 8.22V8.8C0.54 11.44 1.88 16.26 10.5 16.26H11.32ZM30.2773 7.44C32.5373 7.44 33.5773 8.12 33.8773 9.26H26.6773C27.0173 8.12 28.0173 7.44 30.2573 7.44H30.2773ZM38.3173 12.2H33.9173C33.8573 12.46 33.3773 13.58 30.4173 13.58H30.3973C27.9373 13.58 26.8573 12.74 26.5973 11.48H38.3773V10.74C38.3773 8.12 37.2173 4.94 30.8973 4.94H29.6773C23.8573 4.94 22.2173 7.6 22.2173 10.36V10.8C22.2173 13.62 24.0573 16.3 29.7973 16.3H30.9373C37.3573 16.3 38.3173 13.68 38.3173 12.22V12.2ZM39.7291 16H44.1891V10.92C44.1891 9.16 45.4891 8 47.4891 8C49.4691 8 50.3691 9.02 50.3691 10.68V16H54.8691V9.2C54.8691 7.12 53.3891 5 49.6291 5H49.4891C46.2891 5 44.6891 6.54 44.1491 7.08V5.24H39.7291V16ZM64.3688 16V13.04H63.1488C62.3688 13.04 62.2488 12.68 62.2488 12.1V8.2H64.3688V5.24H62.2488V2.1H57.8488V5.24H55.7488V8.2H57.8488V12.94C57.8488 14.8 58.5688 16 60.5088 16H64.3688Z"
+                    fill="white"
+                  />
+                </symbol>
+              </svg>
+              <svg width="65" height="17" class="logo__image">
+                <use xlink:href="#logo"></use>
+              </svg>
+            </a>
+          </div>
 
-      <section class="clients">
-        <h2 class="clients__title title">Наши клиенты</h2>
-        <div class="clients__wrapper" id="clientsWrapper">
-          <img src="./img/clients-name-whole.png" />
+          <nav class="main-nav">
+            <ul class="main-nav__list">
+              <li class="main-nav__item">
+                <a class="main-nav__link" href="#">кейсы</a>
+              </li>
+              <li class="main-nav__item">
+                <a class="main-nav__link" href="#">о нас</a>
+              </li>
+              <li class="main-nav__item">
+                <a class="main-nav__link" href="#">контакты</a>
+              </li>
+              <li class="main-nav__item">
+                <a class="main-nav__link" href="#">новости</a>
+              </li>
+              <li class="main-nav__item">
+                <a class="main-nav__link" href="#">клиенты</a>
+              </li>
+            </ul>
+          </nav>
+
+          <button
+            class="page-header__toggle page-header__toggle--closed"
+          ></button>
         </div>
-      </section>
-    </main>
+      </header>
 
-    <!------------------ footer ----------------------------->
+      <!------------------ main ----------------------------->
 
-    <footer class="page-footer">
-      <div class="page-footer__container container">
-        <h2 class="page-footer__title title">Контакты</h2>
+      <main class="page-main">
+        <div class="page-main__title-wrapper">
+          <h1 class="page-main__title">Больше чем тенге</h1>
+        </div>
 
-        <form class="page-footer__form form" action="#" method="post">
-          <div class="form__input-wrapper area-name">
-            <label for="name"></label>
-            <input
-              class="input-text"
-              id="name"
-              type="text"
-              name="name"
-              placeholder="Ваше имя"
-            />
+        <div class="page-main__contacts main-contacts container">
+          <button type="button" class="main-contacts__adress">
+            Казань,<br />
+            Карла Маркса 5
+          </button>
+          <a href="#" class="main-contacts__email">info@cent</a>
+        </div>
+
+        <section class="about-us container">
+          <div class="about-us__column-left">
+            <h2 class="about-us__title title">О нас</h2>
           </div>
+          <div class="about-us__column-right">
+            <p class="about-us__text">
+              Цент –– это агенство, представляющее полный комплекс услуг в
+              области digital - маркетинга и креатива. Агентсво обладает
+              крупнейшей инфраструктурой в социальных сетях в мире.
+            </p>
 
-          <div class="form__input-wrapper area-phone">
-            <label for="phone"></label>
-            <input
-              class="input-text"
-              id="phone"
-              type="tel"
-              name="phone"
-              placeholder="Телефон"
-            />
+            <div class="about-us__wrapper">
+              <button type="button" class="about-us__communicate">
+                Связаться
+              </button>
+              <button type="button" class="about-us__more-about-us">
+                Больше о нас
+              </button>
+            </div>
           </div>
+        </section>
 
-          <div class="form__input-wrapper area-email">
-            <label for="email"></label>
-            <input
-              class="input-text"
-              id="email"
-              type="email"
-              name="email"
-              placeholder="Email"
-            />
+        <!------------------ cases ----------------------------->
+
+        <section class="cases container">
+          <!------------------ advantages ----------------------------->
+
+          <section class="advantages container">
+            <div class="advantages__media">
+              <h2 class="advantages__title">Сми</h2>
+              <p class="advantages__numeral">> 2 млн</p>
+              <p class="advantages__description">ежемесечная аудитория</p>
+            </div>
+
+            <div class="advantages__media">
+              <h2 class="advantages__title">Соцсети</h2>
+              <p class="advantages__numeral">> 14 млн</p>
+              <p class="advantages__description">ежемесечный охват</p>
+            </div>
+
+            <div class="advantages__media">
+              <h2 class="advantages__title">Pr</h2>
+              <p class="advantages__numeral">> 30</p>
+              <p class="advantages__description">
+                решенных информационных кризисов
+              </p>
+            </div>
+
+            <div class="advantages__media">
+              <h2 class="advantages__title">Креатив</h2>
+              <p class="advantages__numeral">> 150</p>
+              <p class="advantages__description">
+                Инфоповодов федерального уровня
+              </p>
+            </div>
+
+            <div class="advantages__media">
+              <h2 class="advantages__title">Блогеры</h2>
+              <p class="advantages__numeral">> 1000</p>
+              <p class="advantages__description plr-95">
+                Интеграции с инфлюенсерами
+              </p>
+            </div>
+
+            <div class="advantages__media">
+              <h2 class="advantages__title">Мероприятия</h2>
+              <p class="advantages__numeral">> 400</p>
+              <p class="advantages__description plr-50">
+                Событий регионального и федерального масштаба с общим охватом 45
+                млн
+              </p>
+            </div>
+          </section>
+          <!------------------ advantages ----------------------------->
+
+          <h2 class="cases__title title">Кейсы</h2>
+
+          <div class="cases__card-wrapper">
+            <div class="cases__column-left">
+              <div class="cases__card card">
+                <a class="card__link">
+                  <img
+                    class="card__image-little"
+                    src="./img/image1case.png"
+                    width="344"
+                    height="236"
+                    alt="Итоги года"
+                /></a>
+                <p class="card__title">Итоги года 2021</p>
+                <p class="card__subtitle">Ежегодная премия</p>
+              </div>
+
+              <div class="cases__card card">
+                <a class="card__link">
+                  <img
+                    class="card__image-little"
+                    src="./img/image2case.png"
+                    width="344"
+                    height="236"
+                    alt="Итоги года"
+                /></a>
+                <p class="card__title">Enter x Водоканал</p>
+                <p class="card__subtitle">Рекламная коммуникация</p>
+              </div>
+
+              <div class="cases__card card">
+                <a class="card__link">
+                  <img
+                    class="card__image-little"
+                    src="./img/image3case.png"
+                    width="344"
+                    height="236"
+                    alt="Итоги года"
+                /></a>
+                <p class="card__title">Итоги года 2021</p>
+                <p class="card__subtitle">Ежегодная премия</p>
+              </div>
+
+              <div class="cases__card card">
+                <a class="card__link">
+                  <img
+                    class="card__image-little"
+                    src="./img/image4case.png"
+                    width="344"
+                    height="236"
+                    alt="Итоги года"
+                /></a>
+                <p class="card__title">Enter x Водоканал</p>
+                <p class="card__subtitle">Рекламная коммуникация</p>
+              </div>
+            </div>
+
+            <div class="cases__column-right">
+              <div class="cases__card card">
+                <a class="card__link">
+                  <img
+                    class="card__image-big"
+                    src="./img/image5case.png"
+                    width="344"
+                    height="236"
+                    alt="Итоги года"
+                /></a>
+                <p class="card__title">Фестиваль «Профсоюзная»</p>
+                <p class="card__subtitle">Уличный фестиваль</p>
+              </div>
+
+              <div class="cases__card card">
+                <a class="card__link">
+                  <img
+                    class="card__image-big"
+                    src="./img/image6case.png"
+                    width="344"
+                    height="236"
+                    alt="Итоги года"
+                /></a>
+                <p class="card__title">Мой прекрасный Татарстан</p>
+                <p class="card__subtitle">Фотомарафон</p>
+              </div>
+
+              <div class="cases__card card">
+                <a class="card__link">
+                  <img
+                    class="card__image-big"
+                    src="./img/image7case.png"
+                    width="344"
+                    height="236"
+                    alt="Итоги года"
+                /></a>
+                <p class="card__title">Фестиваль «Профсоюзная»</p>
+                <p class="card__subtitle">Уличный фестиваль</p>
+              </div>
+
+              <div class="cases__card card">
+                <a class="card__link">
+                  <img
+                    class="card__image-big"
+                    src="./img/image8case.png"
+                    width="344"
+                    height="236"
+                    alt="Итоги года"
+                /></a>
+                <p class="card__title">Мой прекрасный Татарстан</p>
+                <p class="card__subtitle">Фотомарафон</p>
+              </div>
+            </div>
           </div>
-
-          <div class="form__input-wrapper area-question">
-            <label for="question"></label>
-            <input
-              class="input-text"
-              id="question"
-              type="text"
-              name="question"
-              placeholder="Что вы ищете"
-            />
-          </div>
-
-          <textarea
-            class="form__message five area-message"
-            name="text"
-            placeholder="Сообщение"
-          ></textarea>
-          <div class="form__button-wrapper">
-            <button class="form__button button" type="submit">
-              <span class="modify-text-btn">Отправить</span
-              ><span class="arrow form-arrow-position"></span>
+          <div class="cases__button-wrapper">
+            <button class="cases__button button" type="submit">
+              <span class="cases__text-btn">Показать еще</span
+              ><span class="arrow cases-arrow-position"></span>
             </button>
           </div>
-        </form>
+        </section>
 
-        <div class="page-footer__wrapper">
-          <div class="page-footer__contacts footer-contacts">
-            <p class="footer-contacts__tel">8 800 700 60 50</p>
-            <p class="footer-contacts__email">info@cent</p>
-            <p class="footer-contacts__adress">Казань, Карла Маркса 9</p>
+        <!------------------ assets ----------------------------->
+
+        <section class="assets">
+          <h2 class="assets__title title">Наши активы</h2>
+          <div class="assets__wrapper">
+            <div class="assets__scroll" id="assetsScroll">
+              <div class="assets__card">
+                <img
+                  class="assets__image"
+                  src="./img/card1.png"
+                  width="165"
+                  height="297"
+                />
+                <p class="assets__text">Enter</p>
+              </div>
+
+              <div class="assets__card">
+                <img
+                  class="assets__image"
+                  src="./img/card2.png"
+                  width="165"
+                  height="297"
+                />
+                <p class="assets__text">Enter</p>
+              </div>
+
+              <div class="assets__card">
+                <img
+                  class="assets__image"
+                  src="./img/card3.png"
+                  width="165"
+                  height="297"
+                />
+                <p class="assets__text">Enter</p>
+              </div>
+
+              <div class="assets__card">
+                <img
+                  class="assets__image"
+                  src="./img/card4.png"
+                  width="165"
+                  height="297"
+                />
+                <p class="assets__text">Enter</p>
+              </div>
+
+              <div class="assets__card">
+                <img
+                  class="assets__image"
+                  src="./img/card5.png"
+                  width="165"
+                  height="297"
+                />
+                <p class="assets__text">Enter</p>
+              </div>
+
+              <div class="assets__card">
+                <img
+                  class="assets__image"
+                  src="./img/card6.png"
+                  width="165"
+                  height="297"
+                />
+                <p class="assets__text">Enter</p>
+              </div>
+
+              <div class="assets__card">
+                <img
+                  class="assets__image"
+                  src="./img/card7.png"
+                  width="165"
+                  height="297"
+                />
+                <p class="assets__text">Enter</p>
+              </div>
+
+              <div class="assets__card">
+                <img
+                  class="assets__image"
+                  src="./img/card8.png"
+                  width="165"
+                  height="297"
+                />
+                <p class="assets__text">Enter</p>
+              </div>
+            </div>
           </div>
-          <div class="page-footer__copyrite copyrite">
-            <p class="copyrite__text">Агенство Cent, 2017</p>
+        </section>
+        <!------------------ clients ----------------------------->
+
+        <section class="clients">
+          <h2 class="clients__title title">Наши клиенты</h2>
+          <div class="clients__wrapper" id="clientsWrapper">
+            <img src="./img/clients-name-whole.png" />
+          </div>
+        </section>
+      </main>
+
+      <!------------------ footer ----------------------------->
+
+      <footer class="page-footer">
+        <div class="page-footer__container container">
+          <h2 class="page-footer__title title">Контакты</h2>
+
+          <form class="page-footer__form form" action="#" method="post">
+            <div class="form__input-wrapper area-name">
+              <label for="name"></label>
+              <input
+                class="input-text"
+                id="name"
+                type="text"
+                name="name"
+                placeholder="Ваше имя"
+              />
+            </div>
+
+            <div class="form__input-wrapper area-phone">
+              <label for="phone"></label>
+              <input
+                class="input-text"
+                id="phone"
+                type="tel"
+                name="phone"
+                placeholder="Телефон"
+              />
+            </div>
+
+            <div class="form__input-wrapper area-email">
+              <label for="email"></label>
+              <input
+                class="input-text"
+                id="email"
+                type="email"
+                name="email"
+                placeholder="Email"
+              />
+            </div>
+
+            <div class="form__input-wrapper area-question">
+              <label for="question"></label>
+              <input
+                class="input-text"
+                id="question"
+                type="text"
+                name="question"
+                placeholder="Что вы ищете"
+              />
+            </div>
+
+            <textarea
+              class="form__message five area-message"
+              name="text"
+              placeholder="Сообщение"
+            ></textarea>
+            <div class="form__button-wrapper">
+              <button class="form__button button" type="submit">
+                <span class="modify-text-btn">Отправить</span
+                ><span class="arrow form-arrow-position"></span>
+              </button>
+            </div>
+          </form>
+
+          <div class="page-footer__wrapper">
+            <div class="page-footer__contacts footer-contacts">
+              <p class="footer-contacts__tel">8 800 700 60 50</p>
+              <p class="footer-contacts__email">info@cent</p>
+              <p class="footer-contacts__adress">Казань, Карла Маркса 9</p>
+            </div>
+            <div class="page-footer__copyrite copyrite">
+              <p class="copyrite__text">Агенство Cent, 2017</p>
+            </div>
           </div>
         </div>
-      </div>
-      <div id="example"></div>
-    </footer>
+        <div id="example"></div>
+      </footer>
+    </div>
 
     <script src="./js/assets.js"></script>
-    <script src="./js/map.js"></script>
+    <script src="./js/HiddenBlock.js"></script>
     <script src="./js/clients.js"></script>
-    <script src="./js/about-us-hover.js"></script>
-    <script src="./js/email.js"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
   </body>
 </html>

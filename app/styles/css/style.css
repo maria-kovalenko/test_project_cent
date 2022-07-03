@@ -796,7 +796,26 @@ input[type=radio].visually-hidden {
   transform: rotate(45deg)
 }
 .results {
-  display: none
+  display: block;
+  position: absolute;
+  opacity: 0;
+  z-index: -1;
+  -webkit-transition: -webkit-transform .9s;
+  transition: -webkit-transform .9s;
+  -o-transition: transform .9s;
+  transition: transform .9s;
+  transition: transform .9s,-webkit-transform .9s;
+  -webkit-transform: translateY(-900px);
+  -ms-transform: translateY(-900px);
+  transform: translateY(-900px);
+  background-color: #000
+}
+.result_show {
+  -webkit-transform: translateY(0);
+  -ms-transform: translateY(0);
+  transform: translateY(0);
+  opacity: 1;
+  z-index: 5
 }
 .back-wrapper {
   position: relative;
@@ -1326,7 +1345,7 @@ input[type=radio].visually-hidden {
   margin: 0
 }
 .modal {
-  display: none;
+  display: block;
   width: 100%;
   position: absolute;
   z-index: -1;
