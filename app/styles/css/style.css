@@ -335,7 +335,7 @@ input[type=radio].visually-hidden {
   content: "";
   width: 100%;
   height: 89px;
-  top: -85px;
+  top: -68px;
   left: 0;
   background: url(../../../img/mail.svg) 0 0 no-repeat;
   background-size: contain;
@@ -349,6 +349,9 @@ input[type=radio].visually-hidden {
   .main-contacts__email {
     font-size: 20px;
     line-height: 24px
+  }
+  .main-contacts__email:hover::before {
+    top: -85px
   }
 }
 @-webkit-keyframes mail {
@@ -500,7 +503,8 @@ input[type=radio].visually-hidden {
     position: relative;
     display: -webkit-box;
     display: -ms-flexbox;
-    display: flex
+    display: flex;
+    margin-top: -100px
   }
   .advantages::before {
     position: absolute;
@@ -600,10 +604,10 @@ input[type=radio].visually-hidden {
   }
 }
 .plr-95 {
-  padding: 0 95px
+  padding: 0 25%
 }
 .plr-50 {
-  padding: 0 50px
+  padding: 0 13%
 }
 @media (min-width:1440px) {
   .plr-95 {
@@ -638,6 +642,11 @@ input[type=radio].visually-hidden {
 .cases {
   position: relative;
   margin-bottom: 80px
+}
+@media (min-width:1440px) {
+  .cases {
+    margin-bottom: 40px
+  }
 }
 .cases__button-wrapper {
   display: none
@@ -686,9 +695,13 @@ input[type=radio].visually-hidden {
   .cases__card {
     margin-bottom: 40px
   }
+  .cases__card:last-child {
+    margin-bottom: 0
+  }
   .cases__column-left {
     display: block;
     width: 540px;
+    margin-bottom: 0;
     overflow: hidden
   }
   .cases__column-right {
@@ -1281,33 +1294,27 @@ input[type=radio].visually-hidden {
   margin: 0
 }
 .modal {
-  display: none;
-  -webkit-animation: example 1s ease-in-out forwards;
-  animation: example 1s ease-in-out forwards;
-  -webkit-transform: translate(-100%);
-  -ms-transform: translate(-100%);
-  transform: translate(-100%)
+  z-index: 9999;
+  position: absolute;
+  top: -900px;
+  display: block;
+  opacity: 0;
+  -webkit-transition: opacity 1s;
+  -o-transition: opacity 1s;
+  transition: opacity 1s
 }
 .modal__map {
-  max-width: 100%
+  min-width: 1300px;
+  -webkit-transform: translateX(-380px);
+  -ms-transform: translateX(-380px);
+  transform: translateX(-380px)
 }
-@-webkit-keyframes example {
-  0% {
-    -webkit-transform: translateY(-100%);
-    transform: translateY(-100%)
-  }
-  100% {
-    -webkit-transform: translateY(0);
-    transform: translateY(0)
-  }
-}
-@keyframes example {
-  0% {
-    -webkit-transform: translateY(-100%);
-    transform: translateY(-100%)
-  }
-  100% {
-    -webkit-transform: translateY(0);
-    transform: translateY(0)
+@media (min-width:900px) {
+  img.modal__map {
+    width: 100%;
+    max-width: 1650px;
+    -webkit-transform: translateX(0);
+    -ms-transform: translateX(0);
+    transform: translateX(0)
   }
 }

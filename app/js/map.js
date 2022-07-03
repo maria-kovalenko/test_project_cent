@@ -1,10 +1,17 @@
 const adressBtn = document.querySelector(".main-contacts__adress");
 const map = document.querySelector(".modal");
 
-adressBtn.onmouseover = function () {
-  map.style.display = "block";
-};
+adressBtn.addEventListener("mouseover", showMap);
+adressBtn.addEventListener("mouseout", hiddenMap);
+map.addEventListener("mouseover", showMap);
+map.addEventListener("mouseout", hiddenMap);
 
-advantages.onmouseout = function () {
-  map.style.display = "none";
-};
+function showMap() {
+  map.style.opacity = "1";
+  map.style.top = "0";
+}
+
+function hiddenMap() {
+  map.style.top = "-900px";
+  map.style.opacity = "0";
+}
